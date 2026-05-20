@@ -1,0 +1,1369 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Fambissa — Motorista que conduz o seu carro · Maputo, 24/7</title>
+<meta name="description" content="Fambissa: motorista profissional credenciado que conduz o seu carro até casa em Maputo. Equipa de dois profissionais. Nunca deixe o seu carro para trás." />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Fambissa — Nunca deixe o seu carro para trás." />
+<meta property="og:description" content="Motorista profissional que conduz o seu carro até ao destino. Maputo, 24/7." />
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800&display=swap" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'azul-noite':      '#1B3A6B',
+          'azul-noite-2':    '#15305A',
+          'azul-activo':     '#2E75B6',
+          'verde-seguro':    '#0F6E56',
+          'ambar-accao':     '#BA7517',
+          'ambar-accao-2':   '#9F6213',
+          'preto-nocturno':  '#1A1A1A',
+          'branco-limpo':    '#F5F5F5',
+          'cinza-suave':     '#EEF2F7',
+          'cinza-borda':     '#CCD5E0',
+          'texto-sec':       '#5A6573',
+          'wapp-verde':      '#25D366',
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        letterSpacing: {
+          'tight-brand': '-0.01em',
+          'tighter-brand': '-0.02em',
+        },
+        boxShadow: {
+          'brand':     '0 2px 8px rgba(27,58,107,0.08)',
+          'brand-lg':  '0 8px 30px rgba(27,58,107,0.12)',
+          'amber':     '0 6px 18px rgba(186,117,23,0.25)',
+        },
+        maxWidth: {
+          'container': '1200px',
+          'prose-narrow': '720px',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  h1, h2, h3 { letter-spacing: -0.01em; }
+  h1 { letter-spacing: -0.02em; }
+  section[id] { scroll-margin-top: 72px; }
+  .focus-ring:focus-visible { outline: 2px solid #2E75B6; outline-offset: 2px; border-radius: 4px; }
+  .btn-primary { background: #BA7517; color: #fff; transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
+  .btn-primary:hover { background: #9F6213; box-shadow: 0 6px 18px rgba(186,117,23,0.30); }
+  .btn-primary:active { transform: translateY(1px); }
+  .btn-outline-dark { border: 2px solid #1B3A6B; color: #1B3A6B; background: transparent; transition: background .18s ease, color .18s ease; }
+  .btn-outline-dark:hover { background: #1B3A6B; color: #fff; }
+  .btn-outline-light { border: 2px solid rgba(245,245,245,0.85); color: #F5F5F5; background: transparent; transition: background .18s ease, color .18s ease; }
+  .btn-outline-light:hover { background: #F5F5F5; color: #1B3A6B; }
+  .nav-link { color: #1B3A6B; font-weight: 500; transition: color .15s ease; }
+  .nav-link:hover { color: #BA7517; }
+  .link-amber { color: #BA7517; }
+  .link-amber:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .header-scrolled { box-shadow: 0 1px 0 #E2E8F0, 0 6px 18px rgba(27,58,107,0.06); }
+  .case-card { transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+  .case-card:hover { border-bottom-color: #BA7517; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(27,58,107,0.10); }
+  .faq-item[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-toggle { transition: transform .2s ease; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  .price-recommended { box-shadow: 0 12px 40px rgba(27,58,107,0.18); }
+  .map-zone { fill: #BA7517; fill-opacity: 0.15; stroke: #BA7517; stroke-width: 1.4; }
+  .map-zone-soft { fill: #BA7517; fill-opacity: 0.08; stroke: #BA7517; stroke-width: 1.2; stroke-dasharray: 4 4; }
+  /* Motion line in Equipa SVG */
+  @keyframes dashflow { to { stroke-dashoffset: -28; } }
+  .motion-dash { stroke-dasharray: 6 8; animation: dashflow 1.6s linear infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .motion-dash { animation: none; }
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+  /* Hero radial */
+  .hero-bg {
+    background:
+      radial-gradient(circle at 80% 10%, rgba(186,117,23,0.18) 0%, rgba(27,58,107,0) 45%),
+      radial-gradient(circle at 12% 110%, rgba(46,117,182,0.30) 0%, rgba(27,58,107,0) 50%),
+      linear-gradient(180deg, #1B3A6B 0%, #15305A 60%, #1A1A1A 100%);
+  }
+  .grid-overlay {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .step-dot { background: #1B3A6B; }
+  .pill { display:inline-flex; align-items:center; gap:.5rem; padding:.375rem .75rem; border-radius:999px; font-weight:500; font-size:.8125rem; }
+  /* Form */
+  .form-input { border:1px solid #CCD5E0; border-radius:8px; padding:12px 16px; width:100%; background:#fff; transition: border-color .15s ease, box-shadow .15s ease; }
+  .form-input:focus { outline: none; border-color: #2E75B6; box-shadow: 0 0 0 3px rgba(46,117,182,0.18); }
+  .form-input[aria-invalid="true"] { border-color: #B53A2B; box-shadow: 0 0 0 3px rgba(181,58,43,0.10); }
+  .form-error { color:#B53A2B; font-size:.8125rem; margin-top:.25rem; min-height:1rem; }
+  /* Skip link */
+  .skip-link { position:absolute; left:-9999px; top:8px; background:#1B3A6B; color:#fff; padding:.5rem .75rem; border-radius:6px; z-index:100; }
+  .skip-link:focus { left:8px; }
+</style>
+</head>
+<body class="bg-branco-limpo text-preto-nocturno antialiased">
+
+<a href="#main" class="skip-link focus-ring">Saltar para conteúdo principal</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-40 bg-branco-limpo/90 backdrop-blur-md border-b border-cinza-borda/60">
+  <div class="max-w-container mx-auto px-6 lg:px-12 h-14 lg:h-16 flex items-center justify-between gap-6">
+    <a href="#hero" class="flex items-center gap-2.5 focus-ring" aria-label="Fambissa — voltar ao topo">
+      <!-- Mini logomarca: escudo + volante -->
+      <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 3 L34 8 V20 C34 28 28 34 20 37 C12 34 6 28 6 20 V8 Z" fill="#0F6E56"/>
+        <circle cx="20" cy="20" r="6.5" fill="none" stroke="#BA7517" stroke-width="2"/>
+        <circle cx="20" cy="20" r="1.6" fill="#BA7517"/>
+        <line x1="20" y1="13.5" x2="20" y2="17" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+        <line x1="14.5" y1="22" x2="17.5" y2="20.8" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+        <line x1="25.5" y1="22" x2="22.5" y2="20.8" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="font-extrabold tracking-tight-brand text-azul-noite text-[1.25rem] leading-none">fambissa</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Navegação principal">
+      <a href="#como-funciona" class="nav-link focus-ring">Como Funciona</a>
+      <a href="#quando-pedir"  class="nav-link focus-ring">Quando Pedir</a>
+      <a href="#precos"        class="nav-link focus-ring">Preços</a>
+      <a href="#empresas"      class="nav-link focus-ring">Empresas</a>
+      <a href="#faq"           class="nav-link focus-ring">FAQ</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20vi%20o%20vosso%20site%20e%20preciso%20de%20um%20motorista%20para%20conduzir%20o%20meu%20carro."
+         target="_blank" rel="noopener"
+         data-cta="whatsapp" data-cta-location="header"
+         class="btn-primary focus-ring rounded-lg px-4 lg:px-5 py-2.5 text-sm lg:text-[0.95rem] font-semibold inline-flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        Pedir Fambissa
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="pt-14 lg:pt-16">
+
+<!-- ============ 1. HERO ============ -->
+<section id="hero" class="relative hero-bg text-branco-limpo overflow-hidden">
+  <div class="absolute inset-0 grid-overlay opacity-60" aria-hidden="true"></div>
+  <div class="relative max-w-container mx-auto px-6 lg:px-12 pt-14 lg:pt-24 pb-20 lg:pb-28 min-h-[88vh] lg:min-h-[90vh] flex flex-col justify-center">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-7">
+        <span class="pill bg-white/10 text-white/90 border border-white/15 mb-6">
+          <span class="w-2 h-2 rounded-full bg-verde-seguro"></span>
+          Motoristas credenciados · Maputo · 24/7
+        </span>
+        <h1 class="font-extrabold tracking-tighter-brand text-[2.6rem] sm:text-5xl lg:text-[4.5rem] leading-[1.02]">
+          Nunca deixe<br/>o seu carro<br/><span class="text-ambar-accao">para trás.</span>
+        </h1>
+        <p class="mt-6 lg:mt-8 text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed">
+          Motorista profissional. Conduz o seu carro até ao destino. Em qualquer altura.
+        </p>
+
+        <div class="mt-8 lg:mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
+          <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20vi%20o%20vosso%20site%20e%20preciso%20de%20um%20motorista%20para%20conduzir%20o%20meu%20carro."
+             target="_blank" rel="noopener"
+             data-cta="whatsapp" data-cta-location="hero"
+             class="btn-primary focus-ring rounded-lg px-7 py-4 text-base lg:text-lg font-semibold inline-flex items-center justify-center gap-3 shadow-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+            Pedir Fambissa via WhatsApp
+          </a>
+          <a href="tel:+258840000000"
+             data-cta="phone" data-cta-location="hero"
+             class="btn-outline-light focus-ring rounded-lg px-6 py-4 text-base font-semibold inline-flex items-center justify-center gap-2.5 sm:hidden">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+            Ligar agora
+          </a>
+          <a href="tel:+258840000000"
+             data-cta="phone" data-cta-location="hero"
+             class="hidden sm:inline-flex items-center gap-2 text-white/80 hover:text-white text-sm ml-2 focus-ring px-2 py-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+            ou ligue +258 84 000 0000
+          </a>
+        </div>
+
+        <ul class="mt-10 grid grid-cols-3 gap-4 max-w-lg text-sm text-white/75">
+          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Credenciados</li>
+          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Maputo Cidade</li>
+          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>24/7</li>
+        </ul>
+      </div>
+
+      <!-- Hero illustration: small preview of "Equipa de Dois" concept -->
+      <div class="lg:col-span-5 hidden lg:block">
+        <div class="relative aspect-[5/4] rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
+          <span class="absolute -top-3 left-6 pill bg-azul-noite text-white/90 border border-white/15">Equipa de Dois</span>
+          <!-- Mini Equipa illustration (full one further below) -->
+          <svg viewBox="0 0 500 400" class="w-full h-full" aria-hidden="true">
+            <defs>
+              <linearGradient id="heroRoad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#15305A"/>
+                <stop offset="100%" stop-color="#0d2244"/>
+              </linearGradient>
+            </defs>
+            <!-- road -->
+            <path d="M40 320 Q 250 220 460 280" stroke="url(#heroRoad)" stroke-width="60" fill="none" stroke-linecap="round"/>
+            <path d="M40 320 Q 250 220 460 280" stroke="#BA7517" stroke-width="2" stroke-dasharray="10 14" fill="none" stroke-linecap="round" class="motion-dash"/>
+            <!-- Car (front) -->
+            <g transform="translate(330,210)">
+              <rect x="-50" y="-22" width="110" height="38" rx="10" fill="#F5F5F5"/>
+              <rect x="-30" y="-36" width="70" height="22" rx="6" fill="#F5F5F5"/>
+              <rect x="-22" y="-32" width="28" height="16" rx="3" fill="#2E75B6"/>
+              <rect x="10" y="-32" width="26" height="16" rx="3" fill="#2E75B6"/>
+              <circle cx="-30" cy="20" r="9" fill="#1A1A1A"/>
+              <circle cx="40" cy="20" r="9" fill="#1A1A1A"/>
+              <rect x="50" y="-8" width="10" height="6" rx="2" fill="#BA7517"/>
+            </g>
+            <!-- Scooter (rear) -->
+            <g transform="translate(130,290)">
+              <circle cx="-20" cy="14" r="11" fill="#1A1A1A"/>
+              <circle cx="30" cy="14" r="11" fill="#1A1A1A"/>
+              <path d="M-20 4 L 12 -10 L 30 4 Z" fill="#BA7517"/>
+              <rect x="6" y="-26" width="6" height="20" rx="2" fill="#F5F5F5"/>
+              <circle cx="9" cy="-32" r="8" fill="#F5F5F5"/>
+              <rect x="2" y="-22" width="14" height="12" rx="3" fill="#2E75B6"/>
+            </g>
+            <!-- city silhouette -->
+            <g opacity="0.35" fill="#F5F5F5">
+              <rect x="60" y="120" width="20" height="80"/>
+              <rect x="85" y="100" width="14" height="100"/>
+              <rect x="104" y="135" width="22" height="65"/>
+              <rect x="132" y="115" width="16" height="85"/>
+              <rect x="380" y="110" width="18" height="90"/>
+              <rect x="402" y="130" width="14" height="70"/>
+              <rect x="420" y="100" width="20" height="100"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. COMO FUNCIONA ============ -->
+<section id="como-funciona" class="bg-branco-limpo">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="max-w-prose-narrow">
+      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Como Funciona</p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Três passos. Sem fricção.</h2>
+      <p class="mt-4 text-texto-sec text-lg max-w-xl">Da chamada à chegada, o serviço foi desenhado para acontecer com naturalidade, mesmo quando o cliente está cansado.</p>
+    </div>
+
+    <ol class="mt-14 grid md:grid-cols-3 gap-6 lg:gap-12" role="list">
+      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">1</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">Você pede</h3>
+        <p class="mt-3 text-texto-sec leading-relaxed">Envie um WhatsApp ou ligue. Diga onde está e para onde quer ir. Em minutos, confirmamos a equipa e o tempo de chegada.</p>
+      </li>
+      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">2</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M15 15h2a4 4 0 0 1 4 4v2"/></svg>
+        </div>
+        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">A equipa chega</h3>
+        <p class="mt-3 text-texto-sec leading-relaxed">Dois profissionais credenciados: um motorista para o seu carro, um piloto de scooter para o acompanhar.</p>
+      </li>
+      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">3</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
+        </div>
+        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">Você chega em segurança</h3>
+        <p class="mt-3 text-texto-sec leading-relaxed">O motorista conduz o seu carro até ao destino. Você chega tranquilo. O seu carro chega consigo.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 3. A EQUIPA DE DOIS ============ -->
+<section id="equipa-de-dois" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
+  <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
+  <div class="relative max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-5">
+        <p class="pill bg-white/10 text-white/90 border border-white/15 mb-4">O diferencial</p>
+        <h2 class="text-3xl lg:text-5xl font-bold leading-tight">Dois profissionais.<br/><span class="text-ambar-accao">Uma promessa.</span></h2>
+        <p class="mt-6 text-white/80 leading-relaxed text-lg">
+          O serviço Fambissa opera sempre com dois profissionais por pedido. Um motorista credenciado conduz o seu carro até ao destino. Um piloto de scooter segue atrás, recolhe o motorista após a entrega, e a equipa segue para o pedido seguinte.
+        </p>
+        <p class="mt-4 text-white/70 leading-relaxed">
+          É uma arquitectura simples para um problema que nunca tinha tido solução organizada em Moçambique.
+        </p>
+
+        <ul class="mt-10 space-y-5">
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-lg bg-ambar-accao/15 border border-ambar-accao/30 inline-flex items-center justify-center flex-none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </span>
+            <div>
+              <h3 class="font-semibold text-lg">O seu carro chega consigo.</h3>
+              <p class="text-white/70 mt-1">Nunca fica para trás. Não há segunda deslocação no dia seguinte.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-lg bg-ambar-accao/15 border border-ambar-accao/30 inline-flex items-center justify-center flex-none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+            </span>
+            <div>
+              <h3 class="font-semibold text-lg">Segurança redundante.</h3>
+              <p class="text-white/70 mt-1">O piloto de scooter é testemunha e apoio. Dois pares de olhos, não um.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-lg bg-ambar-accao/15 border border-ambar-accao/30 inline-flex items-center justify-center flex-none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h3 class="font-semibold text-lg">Operação eficiente.</h3>
+              <p class="text-white/70 mt-1">Sem carros de apoio caros, o serviço mantém-se acessível para quem precisa.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ilustração SVG inline — peça central do design -->
+      <div class="lg:col-span-7">
+        <div class="relative rounded-2xl bg-azul-noite-2/60 border border-white/10 p-4 lg:p-6 shadow-brand-lg">
+          <figure aria-labelledby="equipa-figcaption">
+            <svg viewBox="0 0 900 600" class="w-full h-auto" role="img" aria-label="Ilustração: motorista a conduzir o carro do cliente seguido por piloto em scooter">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1B3A6B"/>
+                  <stop offset="100%" stop-color="#15305A"/>
+                </linearGradient>
+                <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#0d2244"/>
+                  <stop offset="50%" stop-color="#1A2E54"/>
+                  <stop offset="100%" stop-color="#0d2244"/>
+                </linearGradient>
+                <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0%" stop-color="#BA7517" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#BA7517" stop-opacity="0"/>
+                </radialGradient>
+                <pattern id="dotgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+                  <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.06"/>
+                </pattern>
+              </defs>
+
+              <!-- Background -->
+              <rect width="900" height="600" fill="url(#sky)"/>
+              <rect width="900" height="600" fill="url(#dotgrid)"/>
+
+              <!-- City silhouette far back -->
+              <g opacity="0.18" fill="#F5F5F5">
+                <rect x="40" y="180" width="36" height="160"/>
+                <rect x="82" y="150" width="22" height="190"/>
+                <rect x="110" y="200" width="40" height="140"/>
+                <rect x="156" y="170" width="26" height="170"/>
+                <rect x="188" y="140" width="30" height="200"/>
+                <rect x="224" y="190" width="22" height="150"/>
+                <rect x="260" y="165" width="36" height="175"/>
+                <rect x="302" y="195" width="22" height="145"/>
+                <rect x="600" y="170" width="30" height="170"/>
+                <rect x="636" y="195" width="22" height="145"/>
+                <rect x="664" y="155" width="40" height="185"/>
+                <rect x="710" y="180" width="24" height="160"/>
+                <rect x="740" y="200" width="34" height="140"/>
+                <rect x="780" y="170" width="22" height="170"/>
+                <rect x="808" y="195" width="38" height="145"/>
+              </g>
+              <!-- distant lights -->
+              <g fill="#BA7517" opacity="0.6">
+                <circle cx="92" cy="220" r="1.5"/><circle cx="120" cy="260" r="1.5"/><circle cx="200" cy="210" r="1.5"/>
+                <circle cx="240" cy="250" r="1.5"/><circle cx="280" cy="220" r="1.5"/><circle cx="650" cy="220" r="1.5"/>
+                <circle cx="690" cy="260" r="1.5"/><circle cx="730" cy="210" r="1.5"/><circle cx="790" cy="240" r="1.5"/>
+              </g>
+
+              <!-- Soft amber glow under car -->
+              <ellipse cx="620" cy="500" rx="220" ry="60" fill="url(#glow)"/>
+
+              <!-- Road -->
+              <path d="M -20 540 Q 200 440 450 470 T 920 430" stroke="url(#roadGrad)" stroke-width="120" fill="none" stroke-linecap="round"/>
+              <!-- road edges -->
+              <path d="M -20 540 Q 200 440 450 470 T 920 430" stroke="#2E75B6" stroke-width="1.5" stroke-opacity="0.35" fill="none"/>
+              <path d="M -20 480 Q 200 380 450 410 T 920 370" stroke="#2E75B6" stroke-width="1.5" stroke-opacity="0.35" fill="none"/>
+              <!-- centre dashed lane -->
+              <path d="M -20 510 Q 200 410 450 440 T 920 400" stroke="#F5F5F5" stroke-width="3" stroke-opacity="0.55" stroke-dasharray="14 18" fill="none"/>
+              <!-- motion trace (animated) -->
+              <path id="motion-route" d="M 140 530 Q 320 460 460 478 T 760 442" stroke="#BA7517" stroke-width="3" stroke-linecap="round" fill="none" class="motion-dash"/>
+
+              <!-- ====== CAR (front, leading) ====== -->
+              <g transform="translate(620,455)">
+                <!-- shadow -->
+                <ellipse cx="0" cy="62" rx="110" ry="10" fill="#000" opacity="0.35"/>
+                <!-- body lower -->
+                <path d="M -110 30 Q -110 8 -88 4 L -60 -8 Q -40 -36 -10 -38 L 40 -38 Q 70 -36 88 -10 L 102 -2 Q 116 4 116 26 L 116 38 Q 116 50 104 50 L 90 50 A 18 18 0 1 0 54 50 L -54 50 A 18 18 0 1 0 -90 50 L -100 50 Q -110 50 -110 38 Z" fill="#F5F5F5"/>
+                <!-- side trim -->
+                <path d="M -100 26 L 104 26" stroke="#CCD5E0" stroke-width="1.5"/>
+                <!-- upper / windows -->
+                <path d="M -56 -8 Q -38 -34 -10 -34 L 40 -34 Q 64 -34 82 -12 L 88 -8 Z" fill="#1A1A1A"/>
+                <!-- window inner highlight (driver area) -->
+                <path d="M -50 -8 Q -36 -28 -12 -28 L 12 -28 L 12 -8 Z" fill="#2E75B6" opacity="0.55"/>
+                <path d="M 14 -28 L 36 -28 Q 56 -28 72 -12 L 80 -8 L 14 -8 Z" fill="#2E75B6" opacity="0.35"/>
+                <!-- driver silhouette in car (geometric) -->
+                <g transform="translate(-22,-18)">
+                  <circle cx="0" cy="-6" r="6.5" fill="#F5F5F5"/>
+                  <path d="M -10 8 Q -10 -2 0 -2 Q 10 -2 10 8 Z" fill="#F5F5F5"/>
+                </g>
+                <!-- door split -->
+                <path d="M 2 -34 L 2 26" stroke="#CCD5E0" stroke-width="1.2"/>
+                <!-- mirror -->
+                <rect x="-62" y="-12" width="6" height="4" fill="#CCD5E0"/>
+                <!-- headlight -->
+                <rect x="106" y="8" width="12" height="8" rx="2" fill="#BA7517"/>
+                <!-- taillight (red-orange) -->
+                <rect x="-118" y="14" width="10" height="8" rx="2" fill="#BA7517" opacity="0.6"/>
+                <!-- wheels -->
+                <g>
+                  <circle cx="-72" cy="50" r="18" fill="#1A1A1A"/>
+                  <circle cx="-72" cy="50" r="9" fill="#2A2A2A"/>
+                  <circle cx="-72" cy="50" r="2.5" fill="#F5F5F5"/>
+                  <circle cx="72" cy="50" r="18" fill="#1A1A1A"/>
+                  <circle cx="72" cy="50" r="9" fill="#2A2A2A"/>
+                  <circle cx="72" cy="50" r="2.5" fill="#F5F5F5"/>
+                </g>
+                <!-- Fambissa shield on door -->
+                <g transform="translate(30,8) scale(0.6)">
+                  <path d="M 0 0 L 14 5 V 17 C 14 24 7 30 0 33 C -7 30 -14 24 -14 17 V 5 Z" fill="#0F6E56"/>
+                  <circle cx="0" cy="16" r="5.5" fill="none" stroke="#BA7517" stroke-width="1.8"/>
+                </g>
+                <!-- Label callout -->
+                <g transform="translate(-10,-92)">
+                  <rect x="-72" y="-22" width="144" height="34" rx="17" fill="#F5F5F5"/>
+                  <text x="0" y="-2" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1B3A6B">Motorista Fambissa</text>
+                  <text x="0" y="11" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="500" fill="#5A6573">conduz o seu carro</text>
+                  <path d="M 0 12 L -8 22 L 8 22 Z" fill="#F5F5F5"/>
+                </g>
+              </g>
+
+              <!-- ====== SCOOTER (behind, following) ====== -->
+              <g transform="translate(220,500)">
+                <ellipse cx="0" cy="44" rx="70" ry="7" fill="#000" opacity="0.35"/>
+                <!-- rear wheel -->
+                <circle cx="-44" cy="32" r="20" fill="#1A1A1A"/>
+                <circle cx="-44" cy="32" r="10" fill="#2A2A2A"/>
+                <circle cx="-44" cy="32" r="2.5" fill="#F5F5F5"/>
+                <!-- front wheel -->
+                <circle cx="44" cy="32" r="20" fill="#1A1A1A"/>
+                <circle cx="44" cy="32" r="10" fill="#2A2A2A"/>
+                <circle cx="44" cy="32" r="2.5" fill="#F5F5F5"/>
+                <!-- frame / body -->
+                <path d="M -44 32 L -10 -2 L 22 -2 L 38 18 L 44 32 Z" fill="#BA7517"/>
+                <path d="M -10 -2 L 24 -2 L 28 6 L -10 6 Z" fill="#9F6213"/>
+                <!-- handlebar post -->
+                <rect x="32" y="-18" width="5" height="22" rx="2" fill="#1A1A1A"/>
+                <line x1="22" y1="-18" x2="46" y2="-18" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+                <!-- mirror -->
+                <circle cx="22" cy="-22" r="3" fill="#CCD5E0"/>
+                <!-- headlight -->
+                <rect x="40" y="-2" width="10" height="8" rx="2" fill="#BA7517"/>
+                <!-- Rider -->
+                <g>
+                  <!-- torso -->
+                  <path d="M -2 -8 Q -10 -8 -10 4 L -10 18 Q -10 22 -2 22 L 14 22 Q 22 22 22 14 L 22 -2 Q 22 -10 12 -10 Z" fill="#2E75B6"/>
+                  <!-- backpack (apoio) -->
+                  <rect x="-14" y="-4" width="8" height="20" rx="3" fill="#1A1A1A"/>
+                  <!-- arm to handlebar -->
+                  <path d="M 16 6 L 34 -10" stroke="#2E75B6" stroke-width="9" stroke-linecap="round"/>
+                  <!-- helmet (visor + dome) -->
+                  <g transform="translate(8,-24)">
+                    <path d="M -12 6 Q -12 -10 0 -10 Q 12 -10 12 6 L 8 8 L -8 8 Z" fill="#0F6E56"/>
+                    <path d="M -10 -2 Q -10 -8 0 -8 Q 10 -8 10 -2 L 8 4 L -8 4 Z" fill="#1A1A1A"/>
+                    <path d="M -10 -2 L 10 -2" stroke="#BA7517" stroke-width="1.5"/>
+                  </g>
+                </g>
+                <!-- Label callout -->
+                <g transform="translate(0,-78)">
+                  <rect x="-72" y="-22" width="144" height="34" rx="17" fill="#F5F5F5"/>
+                  <text x="0" y="-2" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1B3A6B">Piloto de scooter</text>
+                  <text x="0" y="11" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="500" fill="#5A6573">segue, recolhe, continua</text>
+                  <path d="M 0 12 L -8 22 L 8 22 Z" fill="#F5F5F5"/>
+                </g>
+              </g>
+
+              <!-- Small "compass" / direction marker -->
+              <g transform="translate(840,80)" opacity="0.65">
+                <circle cx="0" cy="0" r="22" fill="none" stroke="#F5F5F5" stroke-width="1"/>
+                <path d="M 0 -14 L 4 0 L 0 14 L -4 0 Z" fill="#BA7517"/>
+                <text x="0" y="-26" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#F5F5F5" opacity="0.8">DESTINO</text>
+              </g>
+
+              <!-- Stars / dots in night sky -->
+              <g fill="#F5F5F5" opacity="0.45">
+                <circle cx="120" cy="60" r="1"/>
+                <circle cx="200" cy="90" r="1"/>
+                <circle cx="320" cy="50" r="1.5"/>
+                <circle cx="480" cy="80" r="1"/>
+                <circle cx="540" cy="40" r="1"/>
+                <circle cx="700" cy="70" r="1.5"/>
+                <circle cx="770" cy="30" r="1"/>
+              </g>
+            </svg>
+          </figure>
+          <figcaption id="equipa-figcaption" class="sr-only">Diagrama da Equipa de Dois: motorista conduz o carro do cliente; piloto de scooter segue atrás e recolhe o motorista após a entrega.</figcaption>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. QUANDO PEDIR ============ -->
+<section id="quando-pedir" class="bg-branco-limpo">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="max-w-prose-narrow">
+      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Quando pedir</p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Seis momentos em que faz sentido.</h2>
+      <p class="mt-4 text-texto-sec text-lg">Reconhece algum? Provavelmente já viveu mais do que um.</p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+      <!-- card template -->
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M8 4v4"/><path d="M16 4v4"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Após um jantar com clientes</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">Fadiga, ou consumo social. Não vale a pena arriscar a viagem para casa.</p>
+      </article>
+
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V12h6v9"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Casamento, festa ou evento social</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">A celebração termina sem stress. Você e o seu carro chegam juntos a casa.</p>
+      </article>
+
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Após um turno longo ou viagem</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">Trabalho extenso, regresso de Inhaca, viagem cansativa. Descansa enquanto chegamos.</p>
+      </article>
+
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4v6a4 4 0 1 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M19 10v2a7 7 0 1 1-14 0v-2"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Quando se sente indisposto</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">Dor de cabeça, febre, mal-estar pontual. Não conduza assim — peça Fambissa.</p>
+      </article>
+
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 8h10"/><path d="M7 12h6"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Precisa de descansar durante o trajecto</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">Atender chamadas, ler relatórios, preparar uma reunião. O carro continua, você trabalha.</p>
+      </article>
+
+      <article class="case-card bg-white rounded-2xl border border-cinza-borda/60 border-b-4 border-b-cinza-borda/60 p-6 lg:p-7 shadow-brand">
+        <div class="w-11 h-11 rounded-lg bg-azul-activo/10 inline-flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="11" r="3"/><path d="M21 21v-1a3 3 0 0 0-3-3"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-azul-noite tracking-tight-brand">Recebeu visita que não conhece a cidade</h3>
+        <p class="mt-2 text-sm text-texto-sec leading-relaxed">Família ou parceiro de negócios em Maputo. Põe-lhe um motorista profissional ao volante do seu carro.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. OS NOSSOS MOTORISTAS ============ -->
+<section id="motoristas" class="bg-cinza-suave">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div class="lg:col-span-5">
+        <!-- Placeholder fotográfico estilizado (sem stock photo) -->
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-azul-noite shadow-brand-lg">
+          <svg viewBox="0 0 400 500" class="absolute inset-0 w-full h-full" aria-hidden="true">
+            <defs>
+              <linearGradient id="portraitBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1B3A6B"/>
+                <stop offset="100%" stop-color="#0F6E56"/>
+              </linearGradient>
+              <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="14" stroke="#F5F5F5" stroke-opacity="0.05" stroke-width="6"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="500" fill="url(#portraitBg)"/>
+            <rect width="400" height="500" fill="url(#stripes)"/>
+            <!-- Silhouette of professional driver -->
+            <g transform="translate(200,290)">
+              <ellipse cx="0" cy="200" rx="180" ry="40" fill="#0d2244" opacity="0.6"/>
+              <!-- shoulders / uniform -->
+              <path d="M -130 60 Q -130 0 -70 -10 L 70 -10 Q 130 0 130 60 L 130 220 L -130 220 Z" fill="#F5F5F5"/>
+              <!-- shirt collar / tie line -->
+              <path d="M -20 -10 L 0 30 L 20 -10 Z" fill="#1B3A6B"/>
+              <rect x="-3" y="20" width="6" height="80" fill="#BA7517"/>
+              <!-- name badge -->
+              <rect x="40" y="40" width="48" height="18" rx="3" fill="#1B3A6B"/>
+              <text x="64" y="53" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#F5F5F5">FAMBISSA</text>
+              <!-- head -->
+              <circle cx="0" cy="-60" r="62" fill="#3a2a1f"/>
+              <!-- cap -->
+              <path d="M -68 -90 Q -68 -130 0 -132 Q 68 -130 68 -90 L 68 -78 L -68 -78 Z" fill="#1B3A6B"/>
+              <rect x="-72" y="-80" width="144" height="8" rx="2" fill="#15305A"/>
+              <!-- cap badge -->
+              <circle cx="0" cy="-108" r="9" fill="#BA7517"/>
+              <path d="M -4 -108 L 0 -104 L 5 -111" stroke="#1B3A6B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <!-- caption strip -->
+            <rect x="0" y="450" width="400" height="50" fill="#1A1A1A" opacity="0.6"/>
+            <text x="24" y="481" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F5F5F5">Equipa Fambissa · Maputo Cidade</text>
+          </svg>
+          <span class="absolute top-4 left-4 pill bg-verde-seguro text-white">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Credenciado
+          </span>
+        </div>
+        <!-- TODO: Substituir por fotografia autêntica de motorista Fambissa em uniforme. -->
+      </div>
+
+      <div class="lg:col-span-7">
+        <p class="pill bg-verde-seguro/10 text-verde-seguro border border-verde-seguro/20 mb-4">Os nossos motoristas</p>
+        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Motoristas que conduziriam o carro do próprio pai.</h2>
+        <p class="mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">A questão mais importante quando se entrega as chaves a alguém: <em>posso confiar?</em> A nossa selecção responde primeiro.</p>
+
+        <ul class="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-5" role="list">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Carta de condução com mínimo 5 anos de experiência.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Registo criminal sem antecedentes.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Verificação de identidade e residência.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Avaliação prática de condução.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Formação em condução defensiva e atendimento ao cliente.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-6 h-6 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span class="text-azul-noite font-medium">Avaliação contínua por feedback de cliente.</span>
+          </li>
+        </ul>
+
+        <blockquote class="mt-10 border-l-4 border-ambar-accao pl-5 text-azul-noite text-lg lg:text-xl font-medium leading-snug max-w-xl">
+          “Se não confiarmos o nosso próprio carro a um candidato, não o aceitamos.”
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. COBERTURA ============ -->
+<section id="cobertura" class="bg-branco-limpo">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-5 order-2 lg:order-1">
+        <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Cobertura e disponibilidade</p>
+        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Maputo, todas as zonas.<br/>24 horas, todos os dias.</h2>
+
+        <ul class="mt-8 space-y-3 text-azul-noite">
+          <li class="flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-ambar-accao"></span>Maputo Cidade — todas as zonas</li>
+          <li class="flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-ambar-accao"></span>Matola</li>
+          <li class="flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-ambar-accao"></span>Marginal · Costa do Sol</li>
+          <li class="flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-ambar-accao opacity-60"></span>Catembe <span class="text-texto-sec text-sm font-normal">(sob marcação)</span></li>
+        </ul>
+
+        <div class="mt-8 grid grid-cols-2 gap-4 max-w-md">
+          <div class="rounded-xl border border-cinza-borda/60 bg-white p-4">
+            <p class="text-3xl font-bold text-azul-noite tracking-tight-brand">12–20<span class="text-base text-texto-sec font-medium ml-1">min</span></p>
+            <p class="text-xs text-texto-sec mt-1">Tempo médio de chegada</p>
+          </div>
+          <div class="rounded-xl border border-cinza-borda/60 bg-white p-4">
+            <p class="text-3xl font-bold text-azul-noite tracking-tight-brand">24<span class="text-base text-texto-sec font-medium ml-1">/7</span></p>
+            <p class="text-xs text-texto-sec mt-1">Sem horário de encerramento</p>
+          </div>
+        </div>
+
+        <p class="mt-6 text-texto-sec text-sm">Em breve: <span class="font-medium text-azul-noite">Beira, Nampula</span>.</p>
+      </div>
+
+      <div class="lg:col-span-7 order-1 lg:order-2">
+        <div class="relative rounded-2xl border border-cinza-borda/60 bg-white p-5 lg:p-7 shadow-brand-lg">
+          <!-- Mapa estilizado de Maputo (line-art custom) -->
+          <svg viewBox="0 0 600 500" class="w-full h-auto" role="img" aria-label="Mapa estilizado da Grande Maputo com zonas servidas pela Fambissa">
+            <defs>
+              <pattern id="water" width="8" height="8" patternUnits="userSpaceOnUse">
+                <path d="M 0 4 Q 2 2 4 4 T 8 4" stroke="#CCD5E0" stroke-width="0.8" fill="none"/>
+              </pattern>
+            </defs>
+            <!-- Indian Ocean / bay -->
+            <rect width="600" height="500" fill="#F5F5F5"/>
+            <path d="M 380 0 L 600 0 L 600 500 L 420 500 Q 360 380 380 280 Q 400 180 380 0 Z" fill="url(#water)" opacity="0.5"/>
+            <text x="520" y="60" font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#5A6573" letter-spacing="2">OCEANO</text>
+            <!-- Land outline -->
+            <path d="M 20 60 L 360 60 Q 380 160 360 260 Q 340 360 400 480 L 20 480 Z" fill="#fff" stroke="#CCD5E0" stroke-width="1.2"/>
+            <!-- Streets grid (very subtle) -->
+            <g stroke="#CCD5E0" stroke-width="0.7" opacity="0.7">
+              <path d="M 60 100 L 360 130"/>
+              <path d="M 60 180 L 380 200"/>
+              <path d="M 60 250 L 360 270"/>
+              <path d="M 60 320 L 380 340"/>
+              <path d="M 60 390 L 380 410"/>
+              <path d="M 100 80 L 110 470"/>
+              <path d="M 180 70 L 200 475"/>
+              <path d="M 260 70 L 280 475"/>
+              <path d="M 320 70 L 350 470"/>
+            </g>
+
+            <!-- ZONES: Maputo Cidade (multiple) -->
+            <path class="map-zone" d="M 220 110 Q 280 100 340 130 Q 360 180 340 220 Q 290 240 240 220 Q 210 180 220 110 Z"/>
+            <path class="map-zone" d="M 170 230 Q 220 220 280 250 Q 300 290 270 320 Q 220 340 180 320 Q 160 280 170 230 Z"/>
+            <path class="map-zone" d="M 240 340 Q 300 330 360 350 Q 370 400 330 430 Q 270 440 230 420 Q 210 380 240 340 Z"/>
+            <!-- MATOLA (west) -->
+            <path class="map-zone" d="M 40 220 Q 90 210 140 230 Q 160 280 130 320 Q 80 340 50 310 Q 30 270 40 220 Z"/>
+            <!-- CATEMBE (south of bay) -->
+            <path class="map-zone-soft" d="M 430 380 Q 480 370 520 400 Q 540 440 510 470 Q 460 480 430 460 Q 410 420 430 380 Z"/>
+
+            <!-- Labels -->
+            <g font-family="Inter,sans-serif" font-weight="600" fill="#1B3A6B">
+              <text x="280" y="180" font-size="13" text-anchor="middle">Polana · Sommerschield</text>
+              <text x="220" y="285" font-size="13" text-anchor="middle">Baixa · Alto-Maé</text>
+              <text x="295" y="395" font-size="13" text-anchor="middle">Costa do Sol</text>
+              <text x="85" y="280" font-size="13" text-anchor="middle">Matola</text>
+              <text x="475" y="430" font-size="12" text-anchor="middle" fill="#5A6573">Catembe</text>
+            </g>
+
+            <!-- Pin in centre -->
+            <g transform="translate(265,255)">
+              <circle cx="0" cy="0" r="18" fill="#BA7517" opacity="0.18"/>
+              <circle cx="0" cy="0" r="10" fill="#BA7517" opacity="0.35"/>
+              <path d="M 0 -16 a 8 8 0 0 1 0 16 a 8 8 0 0 1 0 -16 z" fill="#BA7517"/>
+              <circle cx="0" cy="-8" r="3" fill="#fff"/>
+            </g>
+
+            <!-- Legend -->
+            <g transform="translate(40,440)">
+              <rect x="0" y="0" width="220" height="32" rx="6" fill="#fff" stroke="#CCD5E0"/>
+              <rect x="10" y="11" width="14" height="10" fill="#BA7517" fill-opacity="0.18" stroke="#BA7517" stroke-width="1"/>
+              <text x="30" y="20" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#1B3A6B">Zona servida 24/7</text>
+              <rect x="125" y="11" width="14" height="10" fill="#BA7517" fill-opacity="0.10" stroke="#BA7517" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="145" y="20" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#1B3A6B">Sob marcação</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. PREÇOS ============ -->
+<section id="precos" class="bg-cinza-suave">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="max-w-prose-narrow">
+      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Preços</p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Transparente. Confirmado sempre antes do serviço.</h2>
+      <p class="mt-4 text-texto-sec text-lg">Os valores abaixo são indicativos. O preço final depende da distância, hora e duração — e é confirmado consigo antes de o motorista sair.</p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6 lg:gap-7">
+      <!-- Trajecto -->
+      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-7 shadow-brand flex flex-col">
+        <h3 class="text-sm font-semibold text-azul-activo uppercase tracking-widest">Vou para casa</h3>
+        <p class="mt-2 text-azul-noite font-medium">1 trajecto urbano</p>
+        <div class="mt-6">
+          <p class="text-xs text-texto-sec uppercase tracking-wider">A partir de</p>
+          <p class="mt-1 text-azul-noite font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
+        </div>
+        <ul class="mt-6 space-y-2 text-sm text-texto-sec">
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Equipa de Dois</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Confirmação em minutos</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pagamento à chegada</li>
+        </ul>
+        <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20gostaria%20de%20saber%20o%20pre%C3%A7o%20para%20um%20servi%C3%A7o%20%C2%ABvou%20para%20casa%C2%BB."
+           target="_blank" rel="noopener"
+           data-cta="whatsapp" data-cta-location="pricing-trajecto"
+           class="mt-7 btn-outline-dark rounded-lg px-5 py-3 text-sm font-semibold text-center focus-ring">Pedir orçamento exacto</a>
+      </article>
+
+      <!-- Por hora (recommended) -->
+      <article class="relative bg-azul-noite text-branco-limpo rounded-2xl border border-azul-noite p-7 price-recommended flex flex-col">
+        <span class="absolute -top-3 left-6 pill bg-ambar-accao text-white shadow-amber">Mais procurado</span>
+        <h3 class="text-sm font-semibold text-ambar-accao uppercase tracking-widest">Por hora</h3>
+        <p class="mt-2 font-medium text-white/85">Motorista à sua disposição</p>
+        <div class="mt-6">
+          <p class="text-xs uppercase tracking-wider text-white/60">A partir de</p>
+          <p class="mt-1 font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">350 <span class="text-lg font-medium text-white/60">MZN/h</span></p>
+        </div>
+        <ul class="mt-6 space-y-2 text-sm text-white/80">
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Múltiplas paragens</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reuniões, eventos, recados</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Mínimo 2 horas</li>
+        </ul>
+        <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20gostaria%20de%20saber%20o%20pre%C3%A7o%20para%20um%20servi%C3%A7o%20%C2%ABpor%20hora%C2%BB."
+           target="_blank" rel="noopener"
+           data-cta="whatsapp" data-cta-location="pricing-hora"
+           class="mt-7 btn-primary rounded-lg px-5 py-3 text-sm font-semibold text-center focus-ring">Pedir orçamento exacto</a>
+      </article>
+
+      <!-- Meio-dia / dia -->
+      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-7 shadow-brand flex flex-col">
+        <h3 class="text-sm font-semibold text-azul-activo uppercase tracking-widest">Por dia</h3>
+        <p class="mt-2 text-azul-noite font-medium">Meio-dia ou dia completo</p>
+        <div class="mt-6">
+          <p class="text-xs text-texto-sec uppercase tracking-wider">A partir de</p>
+          <p class="mt-1 text-azul-noite font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">2 500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
+        </div>
+        <ul class="mt-6 space-y-2 text-sm text-texto-sec">
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Visita de cliente, dia inteiro</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Itinerário definido consigo</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Factura para empresa</li>
+        </ul>
+        <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20gostaria%20de%20saber%20o%20pre%C3%A7o%20para%20um%20servi%C3%A7o%20%C2%ABpor%20dia%C2%BB."
+           target="_blank" rel="noopener"
+           data-cta="whatsapp" data-cta-location="pricing-dia"
+           class="mt-7 btn-outline-dark rounded-lg px-5 py-3 text-sm font-semibold text-center focus-ring">Pedir orçamento exacto</a>
+      </article>
+    </div>
+
+    <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-texto-sec">
+      <span class="font-medium text-azul-noite">Pagamentos aceites:</span>
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azul-activo"></span>M-Pesa</span>
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azul-activo"></span>e-Mola</span>
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azul-activo"></span>Dinheiro</span>
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azul-activo"></span>Transferência bancária</span>
+    </div>
+    <p class="mt-4 text-xs text-texto-sec max-w-2xl">Preços indicativos. O valor final depende da distância, hora e duração. Confirmamos sempre antes do serviço.</p>
+  </div>
+</section>
+
+<!-- ============ 8. EMPRESAS & PARCEIROS ============ -->
+<section id="empresas" class="bg-cinza-suave border-t border-cinza-borda/60">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div class="lg:col-span-6">
+        <p class="pill bg-azul-activo/10 text-azul-activo border border-azul-activo/20 mb-4">Empresas e parceiros</p>
+        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">A sua empresa cuida dos colaboradores.<br/><span class="text-azul-activo">Nós ajudamos.</span></h2>
+        <p class="mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">Três modelos de colaboração. Cada um construído à medida da sua operação.</p>
+
+        <div class="mt-10 space-y-5">
+          <div class="rounded-xl bg-white border border-cinza-borda/60 p-5 lg:p-6">
+            <div class="flex items-start gap-4">
+              <span class="w-10 h-10 rounded-lg bg-azul-noite/5 inline-flex items-center justify-center flex-none">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 21V9h6v12"/></svg>
+              </span>
+              <div>
+                <h3 class="font-semibold text-azul-noite text-lg">Empresas</h3>
+                <p class="text-sm text-texto-sec mt-1">Retainer mensal, eventos corporativos, transfer pós-evento, executivo em deslocação.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-white border border-cinza-borda/60 p-5 lg:p-6">
+            <div class="flex items-start gap-4">
+              <span class="w-10 h-10 rounded-lg bg-azul-noite/5 inline-flex items-center justify-center flex-none">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18l-2 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 7z"/><path d="M8 7V4a4 4 0 0 1 8 0v3"/></svg>
+              </span>
+              <div>
+                <h3 class="font-semibold text-azul-noite text-lg">Bares, hotéis e restaurantes</h3>
+                <p class="text-sm text-texto-sec mt-1">Parceria com vouchers para clientes. Responsabilidade social com efeito comercial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-white border border-cinza-borda/60 p-5 lg:p-6">
+            <div class="flex items-start gap-4">
+              <span class="w-10 h-10 rounded-lg bg-azul-noite/5 inline-flex items-center justify-center flex-none">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B3A6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h3 class="font-semibold text-azul-noite text-lg">Seguradoras</h3>
+                <p class="text-sm text-texto-sec mt-1">Motorista de substituição em casos cobertos por apólice. Integração com a rede de assistência.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário B2B -->
+      <div class="lg:col-span-6">
+        <form id="b2b-form" novalidate class="bg-white rounded-2xl border border-cinza-borda/60 p-6 lg:p-8 shadow-brand-lg">
+          <h3 class="text-2xl font-semibold text-azul-noite tracking-tight-brand">Fale com a equipa de parcerias</h3>
+          <p class="text-texto-sec text-sm mt-1">Respondemos em 24 horas úteis.</p>
+
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="empresa" class="block text-sm font-medium text-azul-noite mb-1.5">Nome da empresa <span class="text-ambar-accao">*</span></label>
+              <input id="empresa" name="empresa" type="text" required class="form-input focus-ring" autocomplete="organization" />
+              <p class="form-error" data-error-for="empresa" aria-live="polite"></p>
+            </div>
+            <div>
+              <label for="contacto" class="block text-sm font-medium text-azul-noite mb-1.5">Nome de contacto <span class="text-ambar-accao">*</span></label>
+              <input id="contacto" name="contacto" type="text" required class="form-input focus-ring" autocomplete="name" />
+              <p class="form-error" data-error-for="contacto" aria-live="polite"></p>
+            </div>
+            <div>
+              <label for="telefone" class="block text-sm font-medium text-azul-noite mb-1.5">Telefone <span class="text-ambar-accao">*</span></label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" required placeholder="+258 84 000 0000" class="form-input focus-ring" autocomplete="tel" />
+              <p class="form-error" data-error-for="telefone" aria-live="polite"></p>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-azul-noite mb-1.5">Email <span class="text-texto-sec font-normal">(opcional)</span></label>
+              <input id="email" name="email" type="email" class="form-input focus-ring" autocomplete="email" />
+              <p class="form-error" data-error-for="email" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <fieldset class="mt-5">
+            <legend class="block text-sm font-medium text-azul-noite mb-2">Tipo de parceria <span class="text-ambar-accao">*</span></legend>
+            <div class="grid sm:grid-cols-3 gap-2">
+              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
+                <input type="radio" name="tipo" value="empresa" required class="accent-azul-activo" />
+                <span class="text-sm text-azul-noite">Empresa</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
+                <input type="radio" name="tipo" value="hospitalidade" class="accent-azul-activo" />
+                <span class="text-sm text-azul-noite">Bar/Hotel/Restaurante</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
+                <input type="radio" name="tipo" value="seguradora" class="accent-azul-activo" />
+                <span class="text-sm text-azul-noite">Seguradora</span>
+              </label>
+            </div>
+            <p class="form-error" data-error-for="tipo" aria-live="polite"></p>
+          </fieldset>
+
+          <div class="mt-5">
+            <label for="mensagem" class="block text-sm font-medium text-azul-noite mb-1.5">Mensagem <span class="text-texto-sec font-normal">(opcional)</span></label>
+            <textarea id="mensagem" name="mensagem" rows="3" class="form-input focus-ring" placeholder="Conte-nos o que tem em mente."></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <div aria-hidden="true" style="position:absolute;left:-9999px;">
+            <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <label class="mt-5 flex items-start gap-3 text-sm text-texto-sec">
+            <input type="checkbox" id="consent" required class="mt-1 accent-azul-activo" />
+            <span>Aceito que a Fambissa contacte-me sobre este pedido. <a href="#" class="link-amber">Política de Privacidade</a>.</span>
+          </label>
+          <p class="form-error" data-error-for="consent" aria-live="polite"></p>
+
+          <button type="submit"
+                  data-cta="form" data-cta-location="empresas"
+                  class="mt-7 w-full sm:w-auto bg-azul-activo hover:bg-azul-noite text-white font-semibold rounded-lg px-7 py-3.5 focus-ring transition-colors">
+            Enviar pedido de parceria
+          </button>
+
+          <div id="b2b-success" hidden class="mt-6 rounded-xl border border-verde-seguro/30 bg-verde-seguro/5 p-5 flex items-start gap-3">
+            <span class="w-8 h-8 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="font-semibold text-azul-noite">Obrigado, entraremos em contacto em 24 horas.</p>
+              <p class="text-sm text-texto-sec mt-1">A equipa Fambissa recebeu o seu pedido. Se for urgente, fale connosco pelo WhatsApp.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. SOBRE ============ -->
+<section id="sobre" class="bg-branco-limpo">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="max-w-prose-narrow mx-auto text-center">
+      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4 mx-auto">Sobre a Fambissa</p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Nascida em Maputo.<br/>Pensada para Moçambique.</h2>
+      <p class="mt-6 text-texto-sec text-lg leading-relaxed">
+        A Fambissa nasceu da constatação de um problema diário sem solução organizada: quando o proprietário de um carro não está em condições de conduzir, deveria poder pedir um profissional que conduzisse o seu próprio veículo até casa. A equipa Fambissa construiu o serviço, a operação e a equipa para responder a essa necessidade — em Maputo, primeiro, e gradualmente no resto do país.
+      </p>
+      <p class="mt-5 text-texto-sec leading-relaxed">
+        O nome <strong class="text-azul-noite">Fambissa</strong> tem origem na língua Changana. Significa, na sua leitura mais directa, <em>aquele que conduz</em> — aquele que faz chegar.
+      </p>
+
+      <blockquote class="mt-12 mx-auto max-w-xl text-2xl lg:text-3xl font-semibold text-azul-noite tracking-tight-brand leading-snug">
+        “Fambissa — aquele que faz chegar.”
+      </blockquote>
+
+      <div class="mt-14 grid sm:grid-cols-3 gap-4 text-left">
+        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
+          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço comercial</p>
+          <p class="mt-2 text-sm text-azul-noite font-medium">Motorista substituto. O que pode pedir hoje.</p>
+        </div>
+        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
+          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço automotivo</p>
+          <p class="mt-2 text-sm text-azul-noite font-medium">Ecossistema do veículo. Em construção.</p>
+        </div>
+        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
+          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço social</p>
+          <p class="mt-2 text-sm text-azul-noite font-medium">Formação e educação rodoviária. Em construção.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section id="faq" class="bg-cinza-suave">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+    <div class="max-w-prose-narrow">
+      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Perguntas frequentes</p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Antes de pedir, as dúvidas mais comuns.</h2>
+    </div>
+
+    <div class="mt-12 grid lg:grid-cols-2 gap-x-10 gap-y-3 max-w-5xl">
+      <!-- FAQ items -->
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">O motorista tem seguro? E se acontecer alguma coisa ao meu carro?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Todos os motoristas operam sob cobertura de seguro de responsabilidade civil profissional contratado pela Fambissa. Em qualquer ocorrência, a Fambissa responde directamente ao cliente — você não fica sozinho com o problema.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Quanto tempo demora até chegarem?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Em Maputo Cidade, o tempo médio é de 12 a 20 minutos. No momento da confirmação enviamos uma estimativa precisa para a sua localização exacta.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Como sei que o motorista é confiável?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Todos os profissionais passam por verificação de registo criminal, validação de identidade e residência, avaliação prática de condução e formação contínua. O motorista identifica-se ao chegar com nome e código de serviço.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">E se o meu carro tiver caixa manual?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Sem problema. Toda a equipa Fambissa conduz caixa manual e automática. Indique a caixa do veículo no pedido e enviamos o motorista adequado.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Posso ir com o motorista no mesmo carro?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Sim — e é o normal. Você vai no seu carro com o motorista; o piloto de scooter segue atrás. Acompanhantes do cliente seguem também consigo no veículo.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Posso pagar em M-Pesa? Em dinheiro?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Aceitamos M-Pesa, e-Mola, dinheiro e transferência bancária. Para empresas, emitimos factura mensal com NUIT.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Fazem serviço de madrugada? Em feriados?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Sim. Operamos 24 horas, todos os dias do ano. Para serviços em horário nocturno ou em feriados, pode aplicar-se um suplemento previamente comunicado.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Cobrem zonas fora de Maputo?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Na fase actual servimos Maputo Cidade (todas as zonas), Matola, Costa do Sol e Catembe sob marcação. A expansão para Beira e Nampula está prevista.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">E se eu pedir e depois já não precisar?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Cancelamento sem custo até o motorista ter saído. Se a equipa já estiver em deslocação, aplica-se uma taxa simbólica de cancelamento. Comunicamo-la consigo antes do serviço.</p>
+      </details>
+
+      <details class="faq-item bg-white rounded-xl border border-cinza-borda/60 px-5 py-4 shadow-brand group">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer focus-ring" aria-expanded="false">
+          <h3 class="text-base lg:text-lg font-semibold text-azul-noite">Posso criar conta corporativa para a minha empresa?</h3>
+          <span class="faq-toggle text-ambar-accao text-2xl font-light leading-none flex-none" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-texto-sec text-sm leading-relaxed">Sim. Disponibilizamos contas com pagamento mensal, relatório por colaborador e tarifa retainer. Fale com a equipa de parcerias na secção <a href="#empresas" class="link-amber">Empresas</a>.</p>
+      </details>
+    </div>
+
+    <div class="mt-12 flex flex-wrap items-center gap-4">
+      <p class="text-texto-sec">Não encontrou a sua pergunta?</p>
+      <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20tenho%20uma%20pergunta%20que%20n%C3%A3o%20encontrei%20nas%20FAQ."
+         target="_blank" rel="noopener"
+         data-cta="whatsapp" data-cta-location="faq"
+         class="btn-outline-dark rounded-lg px-5 py-3 text-sm font-semibold focus-ring inline-flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20z"/></svg>
+        Fale connosco
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CTA FINAL ============ -->
+<section id="contacto" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
+  <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
+  <div class="relative max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28 text-center">
+    <h2 class="text-3xl lg:text-5xl font-bold leading-tight max-w-3xl mx-auto">Pronto para nunca mais deixar o seu carro para trás?</h2>
+    <p class="mt-5 text-white/80 text-lg max-w-xl mx-auto">Um WhatsApp. Uma equipa de dois profissionais. O seu carro, em casa, consigo.</p>
+    <div class="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
+      <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20quero%20pedir%20um%20servi%C3%A7o%20agora."
+         target="_blank" rel="noopener"
+         data-cta="whatsapp" data-cta-location="final"
+         class="btn-primary focus-ring rounded-lg px-8 py-4 text-base font-semibold inline-flex items-center justify-center gap-3 shadow-amber">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        Pedir via WhatsApp
+      </a>
+      <a href="tel:+258840000000"
+         data-cta="phone" data-cta-location="final"
+         class="btn-outline-light focus-ring rounded-lg px-8 py-4 text-base font-semibold inline-flex items-center justify-center gap-2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+        Ligar agora
+      </a>
+    </div>
+    <p class="mt-6 text-white/60 text-sm">+258 84 000 0000 · <a href="mailto:ola@fambissa.co.mz" class="underline underline-offset-4 hover:text-white">ola@fambissa.co.mz</a></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer class="bg-preto-nocturno text-branco-limpo">
+  <div class="max-w-container mx-auto px-6 lg:px-12 py-14 lg:py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <div class="flex items-center gap-2.5">
+          <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 3 L34 8 V20 C34 28 28 34 20 37 C12 34 6 28 6 20 V8 Z" fill="#0F6E56"/>
+            <circle cx="20" cy="20" r="6.5" fill="none" stroke="#BA7517" stroke-width="2"/>
+            <circle cx="20" cy="20" r="1.6" fill="#BA7517"/>
+            <line x1="20" y1="13.5" x2="20" y2="17" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+            <line x1="14.5" y1="22" x2="17.5" y2="20.8" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+            <line x1="25.5" y1="22" x2="22.5" y2="20.8" stroke="#BA7517" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="font-extrabold tracking-tight-brand text-[1.5rem] leading-none">fambissa</span>
+        </div>
+        <p class="mt-5 text-white/70 max-w-sm leading-relaxed">Nunca deixe o seu carro para trás. Motorista profissional que conduz o seu carro até ao destino.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 inline-flex items-center justify-center focus-ring">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M16 11.4a4 4 0 1 1-4.6-4.4 4 4 0 0 1 4.6 4.4z"/><circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 inline-flex items-center justify-center focus-ring">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l.5-4H13V7.5c0-1.1.3-1.9 2-1.9h2V2.2C16.6 2.1 15.3 2 13.9 2 11 2 9 3.7 9 7v3H6v4h3v8h4z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 inline-flex items-center justify-center focus-ring">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h4v4H4zM4 10h4v10H4zM10 10h3.6v1.7h.05c.5-.9 1.7-1.95 3.5-1.95C20.8 9.75 22 11.7 22 14.4V20h-4v-4.9c0-1.2-.02-2.7-1.7-2.7-1.7 0-2 1.3-2 2.6V20h-4z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Serviços</h4>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#como-funciona" class="text-white/70 hover:text-ambar-accao focus-ring">Como Funciona</a></li>
+          <li><a href="#quando-pedir" class="text-white/70 hover:text-ambar-accao focus-ring">Quando Pedir</a></li>
+          <li><a href="#precos" class="text-white/70 hover:text-ambar-accao focus-ring">Preços</a></li>
+          <li><a href="#cobertura" class="text-white/70 hover:text-ambar-accao focus-ring">Cobertura</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Empresa</h4>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#sobre" class="text-white/70 hover:text-ambar-accao focus-ring">Sobre</a></li>
+          <li><a href="#empresas" class="text-white/70 hover:text-ambar-accao focus-ring">Parcerias</a></li>
+          <li><span class="text-white/40">Carreiras <span class="text-xs">(em breve)</span></span></li>
+          <li><a href="#contacto" class="text-white/70 hover:text-ambar-accao focus-ring">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Legal</h4>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#" class="text-white/70 hover:text-ambar-accao focus-ring">Termos de Utilização</a></li>
+          <li><a href="#" class="text-white/70 hover:text-ambar-accao focus-ring">Política de Privacidade</a></li>
+          <li><a href="#" class="text-white/70 hover:text-ambar-accao focus-ring">Política de Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Contacto</h4>
+        <ul class="mt-4 space-y-2.5 text-sm text-white/70">
+          <!-- TODO: Substituir por contactos reais Fambissa -->
+          <li><a href="tel:+258840000000" class="hover:text-ambar-accao focus-ring">+258 84 000 0000</a></li>
+          <li><a href="https://wa.me/258840000000" target="_blank" rel="noopener" class="hover:text-ambar-accao focus-ring">WhatsApp</a></li>
+          <li><a href="mailto:ola@fambissa.co.mz" class="hover:text-ambar-accao focus-ring">ola@fambissa.co.mz</a></li>
+          <li><a href="mailto:parcerias@fambissa.co.mz" class="hover:text-ambar-accao focus-ring">parcerias@fambissa.co.mz</a></li>
+          <li>Maputo, Moçambique</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="my-10 border-white/10" />
+
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 text-sm text-white/55">
+      <p>© 2026 Fambissa Lda. · NUIT 400000000 · Maputo, Moçambique</p>
+      <p class="font-medium text-white/80">Nunca deixe o seu carro para trás.</p>
+    </div>
+    <p class="mt-6 text-center text-xs uppercase tracking-[0.2em] text-white/40">Fambissa — Mobilidade Inteligente · Moçambique Seguro</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button (mobile + desktop) -->
+<a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20preciso%20de%20um%20motorista."
+   target="_blank" rel="noopener"
+   data-cta="whatsapp" data-cta-location="floating"
+   aria-label="Falar com a Fambissa via WhatsApp"
+   class="fixed bottom-5 right-5 z-50 w-14 h-14 lg:w-15 lg:h-15 rounded-full bg-wapp-verde shadow-brand-lg hover:scale-105 active:scale-95 transition-transform inline-flex items-center justify-center focus-ring">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script>
+  // ====== Header shadow on scroll ======
+  (function () {
+    var header = document.getElementById('site-header');
+    var onScroll = function () {
+      if (window.scrollY > 8) header.classList.add('header-scrolled');
+      else header.classList.remove('header-scrolled');
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // ====== FAQ accordion: aria-expanded sync + keyboard friendly ======
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var summary = item.querySelector('summary');
+      summary.setAttribute('role', 'button');
+      summary.setAttribute('tabindex', '0');
+      item.addEventListener('toggle', function () {
+        summary.setAttribute('aria-expanded', item.open ? 'true' : 'false');
+      });
+    });
+  })();
+
+  // ====== GA4 instrumentation hook (stub) ======
+  (function () {
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest('[data-cta]');
+      if (!el) return;
+      var type = el.getAttribute('data-cta');
+      var loc  = el.getAttribute('data-cta-location') || 'unknown';
+      // Stub: console.info; substituir por gtag/dataLayer.push em produção.
+      if (window.dataLayer) {
+        window.dataLayer.push({ event: 'cta_' + type + '_click', location: loc });
+      } else {
+        // eslint-disable-next-line no-console
+        console.info('[Fambissa] cta_' + type + '_click', { location: loc });
+      }
+    });
+  })();
+
+  // ====== Form B2B: validação client-side + submissão fictícia ======
+  (function () {
+    var form = document.getElementById('b2b-form');
+    if (!form) return;
+    var success = document.getElementById('b2b-success');
+
+    function setError(name, msg) {
+      var input = form.querySelector('[name="' + name + '"]');
+      var err = form.querySelector('[data-error-for="' + name + '"]');
+      if (input) input.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      if (err) err.textContent = msg || '';
+    }
+
+    function validate() {
+      var ok = true;
+      // Empresa
+      var empresa = form.empresa.value.trim();
+      if (empresa.length < 2) { setError('empresa', 'Indique o nome da empresa.'); ok = false; }
+      else setError('empresa', '');
+      // Contacto
+      var contacto = form.contacto.value.trim();
+      if (contacto.length < 2) { setError('contacto', 'Indique o nome de contacto.'); ok = false; }
+      else setError('contacto', '');
+      // Telefone (regex moçambicano +258 8X XXXXXXX)
+      var telRaw = form.telefone.value.replace(/\s/g, '');
+      var telOk = /^(\+?258)?8[2-7][0-9]{7}$/.test(telRaw);
+      if (!telOk) { setError('telefone', 'Telefone inválido. Use o formato +258 8X XXXXXXX.'); ok = false; }
+      else setError('telefone', '');
+      // Email (opcional)
+      var email = form.email.value.trim();
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('email', 'Email inválido.'); ok = false; }
+      else setError('email', '');
+      // Tipo
+      var tipoChecked = form.querySelector('input[name="tipo"]:checked');
+      if (!tipoChecked) { setError('tipo', 'Seleccione o tipo de parceria.'); ok = false; }
+      else setError('tipo', '');
+      // Consent
+      if (!form.consent.checked) { setError('consent', 'É necessário aceitar a Política de Privacidade.'); ok = false; }
+      else setError('consent', '');
+      return ok;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Honeypot
+      if (form.website && form.website.value) return;
+      if (!validate()) {
+        var firstInvalid = form.querySelector('[aria-invalid="true"]');
+        if (firstInvalid) firstInvalid.focus();
+        return;
+      }
+      // Submissão fictícia
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'A enviar…';
+      window.setTimeout(function () {
+        form.querySelectorAll('input, textarea, button').forEach(function (el) { el.disabled = true; });
+        success.hidden = false;
+        success.focus && success.focus();
+        if (window.dataLayer) window.dataLayer.push({ event: 'form_b2b_submit', parceria_type: (form.querySelector('input[name="tipo"]:checked') || {}).value });
+      }, 650);
+    });
+
+    // Real-time clear error on input
+    form.querySelectorAll('input, textarea').forEach(function (el) {
+      el.addEventListener('input', function () {
+        if (el.getAttribute('aria-invalid') === 'true') setError(el.name, '');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
