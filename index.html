@@ -109,6 +109,7 @@
   /* Skip link */
   .skip-link { position:absolute; left:-9999px; top:8px; background:#1B3A6B; color:#fff; padding:.5rem .75rem; border-radius:6px; z-index:100; }
   .skip-link:focus { left:8px; }
+  .offscreen-honeypot { position:absolute; left:-9999px; }
 </style>
 </head>
 <body class="bg-branco-limpo text-preto-nocturno antialiased">
@@ -117,7 +118,7 @@
 
 <!-- ============ HEADER ============ -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-40 bg-branco-limpo/90 backdrop-blur-md border-b border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-6 lg:px-12 h-14 lg:h-16 flex items-center justify-between gap-6">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 h-14 lg:h-16 flex items-center justify-between gap-3 sm:gap-6">
     <a href="#hero" class="flex items-center gap-2.5 focus-ring" aria-label="Fambissa — voltar ao topo">
       <!-- Mini logomarca: escudo + volante -->
       <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
@@ -142,12 +143,39 @@
     <div class="flex items-center gap-2">
       <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20vi%20o%20vosso%20site%20e%20preciso%20de%20um%20motorista%20para%20conduzir%20o%20meu%20carro."
          target="_blank" rel="noopener"
+         data-cta="whatsapp" data-cta-location="header-mobile"
+         aria-label="Pedir Fambissa via WhatsApp"
+         class="sm:hidden btn-primary focus-ring rounded-lg w-10 h-10 inline-flex items-center justify-center">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+      </a>
+      <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20vi%20o%20vosso%20site%20e%20preciso%20de%20um%20motorista%20para%20conduzir%20o%20meu%20carro."
+         target="_blank" rel="noopener"
          data-cta="whatsapp" data-cta-location="header"
-         class="btn-primary focus-ring rounded-lg px-4 lg:px-5 py-2.5 text-sm lg:text-[0.95rem] font-semibold inline-flex items-center gap-2">
+         class="hidden sm:inline-flex btn-primary focus-ring rounded-lg px-4 lg:px-5 py-2.5 text-sm lg:text-[0.95rem] font-semibold items-center gap-2">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
         Pedir Fambissa
       </a>
+      <button id="mobile-menu-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Abrir menu de navegação"
+              class="lg:hidden btn-outline-dark focus-ring rounded-lg w-10 h-10 inline-flex items-center justify-center"
+              data-cta="menu" data-cta-location="header-mobile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
     </div>
+  </div>
+
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-cinza-borda/70 bg-branco-limpo/95 backdrop-blur px-4 py-4">
+    <nav class="grid grid-cols-2 gap-2" aria-label="Navegação móvel">
+      <a href="#como-funciona" class="nav-link focus-ring rounded-md px-3 py-2">Como Funciona</a>
+      <a href="#quando-pedir" class="nav-link focus-ring rounded-md px-3 py-2">Quando Pedir</a>
+      <a href="#precos" class="nav-link focus-ring rounded-md px-3 py-2">Preços</a>
+      <a href="#empresas" class="nav-link focus-ring rounded-md px-3 py-2">Empresas</a>
+      <a href="#faq" class="nav-link focus-ring rounded-md px-3 py-2">FAQ</a>
+      <a href="#contacto" class="nav-link focus-ring rounded-md px-3 py-2">Contacto</a>
+    </nav>
   </div>
 </header>
 
@@ -156,14 +184,14 @@
 <!-- ============ 1. HERO ============ -->
 <section id="hero" class="relative hero-bg text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-60" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-6 lg:px-12 pt-14 lg:pt-24 pb-20 lg:pb-28 min-h-[88vh] lg:min-h-[90vh] flex flex-col justify-center">
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 pt-12 lg:pt-24 pb-14 lg:pb-28 min-h-[76vh] lg:min-h-[90vh] flex flex-col justify-center">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
       <div class="lg:col-span-7">
         <span class="pill bg-white/10 text-white/90 border border-white/15 mb-6">
           <span class="w-2 h-2 rounded-full bg-verde-seguro"></span>
           Motoristas credenciados · Maputo · 24/7
         </span>
-        <h1 class="font-extrabold tracking-tighter-brand text-[2.6rem] sm:text-5xl lg:text-[4.5rem] leading-[1.02]">
+        <h1 class="font-extrabold tracking-tighter-brand text-[2.15rem] sm:text-5xl lg:text-[4.5rem] leading-[1.02]">
           Nunca deixe<br/>o seu carro<br/><span class="text-ambar-accao">para trás.</span>
         </h1>
         <p class="mt-6 lg:mt-8 text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed">
@@ -252,7 +280,7 @@
 
 <!-- ============ 2. COMO FUNCIONA ============ -->
 <section id="como-funciona" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="max-w-prose-narrow">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Como Funciona</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Três passos. Sem fricção.</h2>
@@ -291,7 +319,7 @@
 <!-- ============ 3. A EQUIPA DE DOIS ============ -->
 <section id="equipa-de-dois" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="grid lg:grid-cols-12 gap-12 items-start">
       <div class="lg:col-span-5">
         <p class="pill bg-white/10 text-white/90 border border-white/15 mb-4">O diferencial</p>
@@ -522,7 +550,7 @@
 
 <!-- ============ 4. QUANDO PEDIR ============ -->
 <section id="quando-pedir" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="max-w-prose-narrow">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Quando pedir</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Seis momentos em que faz sentido.</h2>
@@ -584,7 +612,7 @@
 
 <!-- ============ 5. OS NOSSOS MOTORISTAS ============ -->
 <section id="motoristas" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
       <div class="lg:col-span-5">
         <!-- Placeholder fotográfico estilizado (sem stock photo) -->
@@ -687,7 +715,7 @@
 
 <!-- ============ 6. COBERTURA ============ -->
 <section id="cobertura" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
       <div class="lg:col-span-5 order-2 lg:order-1">
         <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Cobertura e disponibilidade</p>
@@ -785,7 +813,7 @@
 
 <!-- ============ 7. PREÇOS ============ -->
 <section id="precos" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="max-w-prose-narrow">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Preços</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Transparente. Confirmado sempre antes do serviço.</h2>
@@ -799,7 +827,7 @@
         <p class="mt-2 text-azul-noite font-medium">1 trajecto urbano</p>
         <div class="mt-6">
           <p class="text-xs text-texto-sec uppercase tracking-wider">A partir de</p>
-          <p class="mt-1 text-azul-noite font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
+          <p class="mt-1 text-azul-noite font-bold text-3xl sm:text-4xl lg:text-[2.6rem] tracking-tighter-brand">500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
         </div>
         <ul class="mt-6 space-y-2 text-sm text-texto-sec">
           <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Equipa de Dois</li>
@@ -819,7 +847,7 @@
         <p class="mt-2 font-medium text-white/85">Motorista à sua disposição</p>
         <div class="mt-6">
           <p class="text-xs uppercase tracking-wider text-white/60">A partir de</p>
-          <p class="mt-1 font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">350 <span class="text-lg font-medium text-white/60">MZN/h</span></p>
+          <p class="mt-1 font-bold text-3xl sm:text-4xl lg:text-[2.6rem] tracking-tighter-brand">350 <span class="text-lg font-medium text-white/60">MZN/h</span></p>
         </div>
         <ul class="mt-6 space-y-2 text-sm text-white/80">
           <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Múltiplas paragens</li>
@@ -838,7 +866,7 @@
         <p class="mt-2 text-azul-noite font-medium">Meio-dia ou dia completo</p>
         <div class="mt-6">
           <p class="text-xs text-texto-sec uppercase tracking-wider">A partir de</p>
-          <p class="mt-1 text-azul-noite font-bold text-4xl lg:text-[2.6rem] tracking-tighter-brand">2 500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
+          <p class="mt-1 text-azul-noite font-bold text-3xl sm:text-4xl lg:text-[2.6rem] tracking-tighter-brand">2 500 <span class="text-lg font-medium text-texto-sec">MZN</span></p>
         </div>
         <ul class="mt-6 space-y-2 text-sm text-texto-sec">
           <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Visita de cliente, dia inteiro</li>
@@ -865,7 +893,7 @@
 
 <!-- ============ 8. EMPRESAS & PARCEIROS ============ -->
 <section id="empresas" class="bg-cinza-suave border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
       <div class="lg:col-span-6">
         <p class="pill bg-azul-activo/10 text-azul-activo border border-azul-activo/20 mb-4">Empresas e parceiros</p>
@@ -963,7 +991,7 @@
           </div>
 
           <!-- Honeypot -->
-          <div aria-hidden="true" style="position:absolute;left:-9999px;">
+          <div aria-hidden="true" class="offscreen-honeypot">
             <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
           </div>
 
@@ -996,7 +1024,7 @@
 
 <!-- ============ 9. SOBRE ============ -->
 <section id="sobre" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="max-w-prose-narrow mx-auto text-center">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4 mx-auto">Sobre a Fambissa</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Nascida em Maputo.<br/>Pensada para Moçambique.</h2>
@@ -1031,7 +1059,7 @@
 
 <!-- ============ 10. FAQ ============ -->
 <section id="faq" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
     <div class="max-w-prose-narrow">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Perguntas frequentes</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Antes de pedir, as dúvidas mais comuns.</h2>
@@ -1136,7 +1164,7 @@
 <!-- ============ 11. CTA FINAL ============ -->
 <section id="contacto" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-6 lg:px-12 py-20 lg:py-28 text-center">
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28 text-center">
     <h2 class="text-3xl lg:text-5xl font-bold leading-tight max-w-3xl mx-auto">Pronto para nunca mais deixar o seu carro para trás?</h2>
     <p class="mt-5 text-white/80 text-lg max-w-xl mx-auto">Um WhatsApp. Uma equipa de dois profissionais. O seu carro, em casa, consigo.</p>
     <div class="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
@@ -1261,6 +1289,38 @@
     };
     document.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+  })();
+
+  // ====== Mobile menu toggle ======
+  (function () {
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if (!menuBtn || !menu) return;
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Abrir menu de navegação');
+    }
+
+    menuBtn.addEventListener('click', function () {
+      var isOpen = !menu.classList.contains('hidden');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        menu.classList.remove('hidden');
+        menuBtn.setAttribute('aria-expanded', 'true');
+        menuBtn.setAttribute('aria-label', 'Fechar menu de navegação');
+      }
+    });
+
+    menu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1024) closeMenu();
+    });
   })();
 
   // ====== FAQ accordion: aria-expanded sync + keyboard friendly ======
