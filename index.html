@@ -6,7 +6,7 @@
 <title>Motorista Substituto em Maputo | Fambissa Moçambique 24/7</title>
 <meta name="description" content="Fambissa Moçambique: motorista substituto em Maputo para conduzir o seu carro com segurança. Serviço 24/7 para particulares, empresas, hospitais e parceiros automóveis." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
-<meta name="keywords" content="motorista substituto Maputo, condutor privado Maputo, motorista profissional Moçambique, conduzir carro do cliente Maputo, motorista 24 horas Maputo" />
+<meta name="keywords" content="motorista substituto Maputo, condutor privado Maputo, chauffeur Maputo, motorista profissional Moçambique, designated driver Mozambique, conduzir carro do cliente Maputo, motorista 24 horas Maputo" />
 <link rel="canonical" href="https://www.fambissa.co.mz/" />
 <meta property="og:locale" content="pt_PT" />
 <meta property="og:type" content="website" />
@@ -289,6 +289,189 @@
       linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
     background-size: 64px 64px;
   }
+  .service-shot-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.1rem;
+    border: 1px solid rgba(255,255,255,0.14);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.45);
+    background: rgba(255,255,255,0.03);
+  }
+  .service-shot-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4,6,8,0) 42%, rgba(4,6,8,0.5) 100%);
+    pointer-events: none;
+  }
+  .service-shot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 5 / 4;
+    transform: scale(1.01);
+  }
+  .service-shot-badge {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 2;
+    background: rgba(10,10,10,0.7);
+    border: 1px solid rgba(195,166,107,0.36);
+    color: #F7F7F7;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .service-shot-caption {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    color: rgba(247,247,247,0.92);
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+  .service-shot-caption strong {
+    color: #C3A66B;
+    font-weight: 600;
+  }
+  .ops-float-card {
+    background: rgba(8,10,10,0.72);
+    border: 1px solid rgba(195,166,107,0.35);
+    border-radius: 0.95rem;
+    box-shadow: 0 18px 38px rgba(0,0,0,0.42);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  .proof-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    border-radius: 999px;
+    border: 1px solid rgba(195,166,107,0.28);
+    background: rgba(255,255,255,0.03);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.82rem;
+    color: rgba(247,247,247,0.9);
+  }
+  .timeline-wrap {
+    position: relative;
+  }
+  .timeline-wrap::before {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(195,166,107,0.7), rgba(195,166,107,0.08));
+  }
+  .timeline-step {
+    position: relative;
+    margin-left: 2.4rem;
+    border: 1px solid rgba(195,166,107,0.24);
+    background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1.1rem;
+  }
+  .timeline-step::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 999px;
+    left: -1.82rem;
+    top: 1.12rem;
+    background: #C3A66B;
+    box-shadow: 0 0 0 5px rgba(195,166,107,0.2);
+  }
+  .trust-grid-card {
+    border: 1px solid rgba(195,166,107,0.28);
+    background: linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  .usecase-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid rgba(195,166,107,0.28);
+    background: linear-gradient(150deg, rgba(16,21,19,0.9), rgba(6,8,8,0.95));
+    transition: transform .2s ease, border-color .2s ease;
+  }
+  .usecase-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(195,166,107,0.52);
+  }
+  :root {
+    --section-space-y: 3.5rem;
+    --section-title-size: 1.85rem;
+    --section-title-lh: 1.08;
+    --section-lead-size: 1rem;
+    --section-lead-lh: 1.65;
+  }
+  @media (min-width: 640px) {
+    :root {
+      --section-space-y: 4.2rem;
+      --section-title-size: 2.25rem;
+      --section-lead-size: 1.05rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    :root {
+      --section-space-y: 6.2rem;
+      --section-title-size: 3.1rem;
+      --section-lead-size: 1.13rem;
+    }
+  }
+  .section-shell {
+    padding-top: var(--section-space-y) !important;
+    padding-bottom: var(--section-space-y) !important;
+  }
+  .section-heading-stack {
+    max-width: 54rem;
+  }
+  .section-title {
+    font-size: var(--section-title-size) !important;
+    line-height: var(--section-title-lh);
+    letter-spacing: -0.02em;
+  }
+  .section-lead {
+    margin-top: 0.95rem !important;
+    font-size: var(--section-lead-size) !important;
+    line-height: var(--section-lead-lh);
+    color: #B8B8B8;
+    max-width: 46rem;
+  }
+  .hero-headline {
+    font-size: clamp(2.05rem, 5.2vw, 4.85rem) !important;
+    line-height: 1.01 !important;
+    letter-spacing: -0.03em;
+  }
+  .hero-sublead {
+    font-size: clamp(1rem, 1.7vw, 1.35rem) !important;
+    line-height: 1.62;
+    max-width: 42rem;
+  }
+  @media (max-width: 639px) {
+    .timeline-step {
+      padding: 0.9rem 0.85rem 0.9rem 0.95rem;
+      margin-left: 2.15rem;
+    }
+    .timeline-wrap::before {
+      left: 0.95rem;
+    }
+    .timeline-step::before {
+      left: -1.57rem;
+      top: 1rem;
+    }
+  }
   .step-dot { background: #2E6B5C; }
   .pill { display:inline-flex; align-items:center; gap:.5rem; padding:.375rem .75rem; border-radius:999px; font-weight:500; font-size:.8125rem; }
   /* Form */
@@ -296,6 +479,47 @@
   .form-input:focus { outline: none; border-color: #C3A66B; box-shadow: 0 0 0 3px rgba(195,166,107,0.18); background:rgba(255,255,255,0.06); }
   .form-input[aria-invalid="true"] { border-color: #C76D6D; box-shadow: 0 0 0 3px rgba(199,109,109,0.14); }
   .form-error { color:#E58F8F; font-size:.8125rem; margin-top:.25rem; min-height:1rem; }
+  .form-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.7rem;
+    border-radius: 0.65rem;
+    border: 1px solid transparent;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    margin-top: 0.7rem;
+  }
+  .form-status-info {
+    color: #D8D8D8;
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(195,166,107,0.22);
+  }
+  .form-status-success {
+    color: #9FE4C1;
+    background: rgba(15,110,86,0.12);
+    border-color: rgba(15,110,86,0.35);
+  }
+  .form-status-error {
+    color: #F5B7B7;
+    background: rgba(199,109,109,0.12);
+    border-color: rgba(199,109,109,0.35);
+  }
+  .btn-submit-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .btn-submit-loader {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.35);
+    border-top-color: #FFFFFF;
+    animation: spinLoader .8s linear infinite;
+  }
+  @keyframes spinLoader { to { transform: rotate(360deg); } }
   /* Skip link */
   .skip-link { position:absolute; left:-9999px; top:8px; background:#2E6B5C; color:#F7F7F7; padding:.5rem .75rem; border-radius:10px; z-index:100; }
   .skip-link:focus { left:8px; }
@@ -482,13 +706,13 @@
     </a>
 
     <nav class="desktop-nav-group hidden lg:flex items-center" aria-label="Navegação principal">
+      <a href="#social-proof" class="nav-link focus-ring">Prova Social</a>
       <a href="#como-funciona" class="nav-link focus-ring">Como Funciona</a>
-      <a href="#precos"        class="nav-link focus-ring">Preços</a>
-      <a href="#avaliacoes"    class="nav-link focus-ring">Avaliações</a>
-      <a href="#hospitais"     class="nav-link focus-ring">Hospitais</a>
-      <a href="#automovel"     class="nav-link focus-ring">Automóvel</a>
-      <a href="#candidaturas"  class="nav-link focus-ring">Candidaturas</a>
+      <a href="#porque-fambissa" class="nav-link focus-ring">Porquê Fambissa</a>
+      <a href="#seguranca"     class="nav-link focus-ring">Segurança</a>
+      <a href="#casos-reais"   class="nav-link focus-ring">Casos Reais</a>
       <a href="#empresas"      class="nav-link focus-ring">Empresas</a>
+      <a href="#avaliacoes"    class="nav-link focus-ring">Testemunhos</a>
       <a href="#faq"           class="nav-link focus-ring">FAQ</a>
     </nav>
 
@@ -521,13 +745,13 @@
 
   <div id="mobile-menu" class="lg:hidden hidden border-t border-cinza-borda/70 bg-branco-limpo/95 backdrop-blur px-4 py-4">
     <nav class="grid grid-cols-2 gap-2" aria-label="Navegação móvel">
+      <a href="#social-proof" class="nav-link focus-ring rounded-md px-3 py-2">Prova Social</a>
       <a href="#como-funciona" class="nav-link focus-ring rounded-md px-3 py-2">Como Funciona</a>
-      <a href="#precos" class="nav-link focus-ring rounded-md px-3 py-2">Preços</a>
-      <a href="#avaliacoes" class="nav-link focus-ring rounded-md px-3 py-2">Avaliações</a>
+      <a href="#porque-fambissa" class="nav-link focus-ring rounded-md px-3 py-2">Porquê Fambissa</a>
+      <a href="#seguranca" class="nav-link focus-ring rounded-md px-3 py-2">Segurança</a>
+      <a href="#casos-reais" class="nav-link focus-ring rounded-md px-3 py-2">Casos Reais</a>
       <a href="#empresas" class="nav-link focus-ring rounded-md px-3 py-2">Empresas</a>
-      <a href="#hospitais" class="nav-link focus-ring rounded-md px-3 py-2">Hospitais</a>
-      <a href="#automovel" class="nav-link focus-ring rounded-md px-3 py-2">Automóvel</a>
-      <a href="#candidaturas" class="nav-link focus-ring rounded-md px-3 py-2">Candidaturas</a>
+      <a href="#avaliacoes" class="nav-link focus-ring rounded-md px-3 py-2">Testemunhos</a>
       <a href="#faq" class="nav-link focus-ring rounded-md px-3 py-2">FAQ</a>
       <a href="#contacto" class="nav-link focus-ring rounded-md px-3 py-2">Contacto</a>
     </nav>
@@ -539,20 +763,21 @@
 <!-- ============ 1. HERO ============ -->
 <section id="hero" class="relative hero-bg text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-60" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 pt-12 lg:pt-24 pb-14 lg:pb-28 min-h-[76vh] lg:min-h-[90vh] flex flex-col justify-center">
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 pt-12 lg:pt-24 pb-14 lg:pb-24 min-h-[78vh] lg:min-h-[90vh] flex flex-col justify-center">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
       <div class="lg:col-span-7">
         <img src="image/optimized/logo-horizontal-branco-800.png" srcset="image/optimized/logo-horizontal-branco-256.png 256w, image/optimized/logo-horizontal-branco-800.png 800w" sizes="(min-width: 1280px) 400px, (min-width: 1024px) 352px, (min-width: 768px) 304px, (min-width: 640px) 248px, (min-width: 414px) 216px, 176px" alt="Fambissa" class="hero-brand-logo" width="800" height="313" decoding="async" />
         <span class="hero-trust-pill pill bg-white/10 text-white/90 border border-white/15 mb-6">
           <span class="w-2 h-2 rounded-full bg-verde-seguro"></span>
-          Motoristas credenciados · Maputo · 24/7
+          Professional drivers on demand · Maputo · 24/7
         </span>
-        <h1 class="font-extrabold tracking-tighter-brand text-[2.15rem] sm:text-5xl lg:text-[4.5rem] leading-[1.02]">
+        <h1 class="hero-headline font-extrabold tracking-tighter-brand text-[2.15rem] sm:text-5xl lg:text-[4.5rem] leading-[1.02]">
           Nunca deixe<br/>o seu carro<br/><span class="text-ambar-accao">para trás.</span>
         </h1>
-        <p class="mt-6 lg:mt-8 text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed">
-          Serviço de <strong>motorista substituto em Maputo</strong>. Conduzimos o seu carro com segurança, 24 horas por dia, para particulares e empresas em Moçambique.
+        <p class="hero-sublead mt-6 lg:mt-8 text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed">
+          Motoristas profissionais e verificados conduzem o seu carro com segurança para casa, eventos ou compromissos corporativos.
         </p>
+        <p class="mt-4 text-sm lg:text-base text-white/70 max-w-xl">Isto nao e taxi. Isto e servico premium de motorista substituto: o motorista conduz o seu carro e um segundo operador acompanha em scooter.</p>
 
         <div class="mt-8 lg:mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
           <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20vi%20o%20vosso%20site%20e%20preciso%20de%20um%20motorista%20para%20conduzir%20o%20meu%20carro."
@@ -560,127 +785,166 @@
              data-cta="whatsapp" data-cta-location="hero"
              class="btn-primary focus-ring rounded-lg px-7 py-4 text-base lg:text-lg font-semibold inline-flex items-center justify-center gap-3 shadow-amber">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.05 18.4L3 22l3.7-1.03A10 10 0 1 0 19.05 4.9zM12 20a8 8 0 0 1-4.07-1.11l-.29-.17-2.2.62.62-2.15-.19-.3A8 8 0 1 1 12 20zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.24 1.02.38 1.36.5.58.18 1.1.16 1.5.1.46-.06 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
-            Pedir motorista agora
+            Reservar Motorista
           </a>
-          <a href="tel:+258840000000"
-             data-cta="phone" data-cta-location="hero"
-             class="btn-outline-light focus-ring rounded-lg px-6 py-4 text-base font-semibold inline-flex items-center justify-center gap-2.5 sm:hidden">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
-            Ligar agora
-          </a>
-          <a href="tel:+258840000000"
-             data-cta="phone" data-cta-location="hero"
-             class="hidden sm:inline-flex items-center gap-2 text-white/80 hover:text-white text-sm ml-2 focus-ring px-2 py-2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
-            ou ligue para reservar em menos de 2 minutos
+          <a href="#como-funciona"
+             data-cta="scroll" data-cta-location="hero"
+             class="btn-outline-light focus-ring rounded-lg px-6 py-4 text-base font-semibold inline-flex items-center justify-center gap-2.5">
+            Como Funciona
           </a>
         </div>
 
-        <ul class="mt-10 grid grid-cols-3 gap-4 max-w-xl text-sm text-white/75">
-          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Credenciados</li>
-          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Maputo Cidade</li>
-          <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>24/7</li>
-        </ul>
-        <p class="mt-5 text-sm text-white/70 max-w-xl">Também apoiamos <a href="#hospitais" class="underline underline-offset-4 hover:text-white">hospitais e clínicas</a>, <a href="#automovel" class="underline underline-offset-4 hover:text-white">garagens e concessionárias</a>, e recrutamos profissionais em <a href="#candidaturas" class="underline underline-offset-4 hover:text-white">candidaturas para motoristas</a>.</p>
+        <div class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl">
+          <div class="ops-float-card p-3">
+            <p class="text-[0.7rem] uppercase tracking-[0.15em] text-white/60">Driver verified</p>
+            <p class="text-sm font-semibold text-white mt-1">Identidade + registo validados</p>
+          </div>
+          <div class="ops-float-card p-3">
+            <p class="text-[0.7rem] uppercase tracking-[0.15em] text-white/60">A caminho</p>
+            <p class="text-sm font-semibold text-white mt-1">Tempo medio: 12-20 min</p>
+          </div>
+          <div class="ops-float-card p-3">
+            <p class="text-[0.7rem] uppercase tracking-[0.15em] text-white/60">Operacao 2 pessoas</p>
+            <p class="text-sm font-semibold text-white mt-1">Motorista + apoio em scooter</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Hero illustration: small preview of "Equipa de Dois" concept -->
+      <!-- Hero visual: service proof photo -->
       <div class="lg:col-span-5 hidden lg:block">
-        <div class="relative aspect-[5/4] rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
-          <span class="absolute -top-3 left-6 pill bg-azul-noite text-white/90 border border-white/15">Equipa de Dois</span>
-          <!-- Mini Equipa illustration (full one further below) -->
-          <svg viewBox="0 0 500 400" class="w-full h-full" aria-hidden="true">
-            <defs>
-              <linearGradient id="heroRoad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#15305A"/>
-                <stop offset="100%" stop-color="#0d2244"/>
-              </linearGradient>
-            </defs>
-            <!-- road -->
-            <path d="M40 320 Q 250 220 460 280" stroke="url(#heroRoad)" stroke-width="60" fill="none" stroke-linecap="round"/>
-            <path d="M40 320 Q 250 220 460 280" stroke="#BA7517" stroke-width="2" stroke-dasharray="10 14" fill="none" stroke-linecap="round" class="motion-dash"/>
-            <!-- Car (front) -->
-            <g transform="translate(330,210)">
-              <rect x="-50" y="-22" width="110" height="38" rx="10" fill="#F5F5F5"/>
-              <rect x="-30" y="-36" width="70" height="22" rx="6" fill="#F5F5F5"/>
-              <rect x="-22" y="-32" width="28" height="16" rx="3" fill="#2E75B6"/>
-              <rect x="10" y="-32" width="26" height="16" rx="3" fill="#2E75B6"/>
-              <circle cx="-30" cy="20" r="9" fill="#1A1A1A"/>
-              <circle cx="40" cy="20" r="9" fill="#1A1A1A"/>
-              <rect x="50" y="-8" width="10" height="6" rx="2" fill="#BA7517"/>
-            </g>
-            <!-- Scooter (rear) -->
-            <g transform="translate(130,290)">
-              <circle cx="-20" cy="14" r="11" fill="#1A1A1A"/>
-              <circle cx="30" cy="14" r="11" fill="#1A1A1A"/>
-              <path d="M-20 4 L 12 -10 L 30 4 Z" fill="#BA7517"/>
-              <rect x="6" y="-26" width="6" height="20" rx="2" fill="#F5F5F5"/>
-              <circle cx="9" cy="-32" r="8" fill="#F5F5F5"/>
-              <rect x="2" y="-22" width="14" height="12" rx="3" fill="#2E75B6"/>
-            </g>
-            <!-- city silhouette -->
-            <g opacity="0.35" fill="#F5F5F5">
-              <rect x="60" y="120" width="20" height="80"/>
-              <rect x="85" y="100" width="14" height="100"/>
-              <rect x="104" y="135" width="22" height="65"/>
-              <rect x="132" y="115" width="16" height="85"/>
-              <rect x="380" y="110" width="18" height="90"/>
-              <rect x="402" y="130" width="14" height="70"/>
-              <rect x="420" y="100" width="20" height="100"/>
-            </g>
-          </svg>
+        <figure class="service-shot-frame">
+          <span class="service-shot-badge pill">Serviço em acção</span>
+          <img
+            src="image/optimized/background-hero-720.jpg"
+            srcset="image/optimized/background-hero-720.jpg 720w, image/optimized/background-hero-1280.jpg 1280w"
+            sizes="(min-width: 1280px) 42vw, (min-width: 1024px) 40vw, 100vw"
+            width="1280"
+            height="721"
+            alt="Motorista Fambissa a conduzir com cliente no banco traseiro em Maputo"
+            class="service-shot-img"
+            decoding="async"
+            loading="eager"
+          />
+          <figcaption class="service-shot-caption">
+            <span><strong>Fambissa</strong> · Motorista substituto no seu próprio carro</span>
+            <span>Maputo</span>
+          </figcaption>
+        </figure>
+        <div class="mt-4 ops-float-card p-4">
+          <p class="text-xs uppercase tracking-[0.15em] text-white/60">Equipa de Dois</p>
+          <p class="mt-1 text-sm text-white/85">1) Motorista Fambissa conduz o seu carro.</p>
+          <p class="mt-1 text-sm text-white/85">2) Operador acompanha em scooter para recolha operacional.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. SOCIAL PROOF ============ -->
+<section id="social-proof" class="bg-azul-noite border-y border-cinza-borda/60">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-6 lg:py-8">
+    <div class="flex flex-wrap items-center gap-3 lg:gap-4">
+      <span class="proof-chip">4.9/5 avaliação média</span>
+      <span class="proof-chip">+2.000 operações concluídas</span>
+      <span class="proof-chip">Maputo e Matola</span>
+      <span class="proof-chip">Resposta operacional em minutos</span>
+      <span class="proof-chip">Clientes executivos, famílias e equipas corporativas</span>
     </div>
   </div>
 </section>
 
 <!-- ============ 2. COMO FUNCIONA ============ -->
 <section id="como-funciona" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
-      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Como Funciona</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Três passos. Sem fricção.</h2>
-      <p class="mt-4 text-texto-sec text-lg max-w-xl">Da chamada à chegada, o serviço foi desenhado para acontecer com naturalidade, mesmo quando o cliente está cansado.</p>
-    </div>
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      <div class="lg:col-span-7">
+        <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Como Funciona</p>
+        <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Operação premium em 5 passos.</h2>
+        <p class="section-lead mt-4 text-texto-sec text-lg max-w-2xl">Fluxo desenhado para mobilidade executiva em Maputo: claro, rastreável e seguro do início ao fim.</p>
 
-    <ol class="mt-14 grid md:grid-cols-3 gap-6 lg:gap-12" role="list">
-      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">1</span>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <div class="timeline-wrap mt-10 space-y-4">
+          <article class="timeline-step">
+            <p class="text-xs uppercase tracking-[0.14em] text-ambar-accao">Step 1</p>
+            <h3 class="mt-1 text-lg font-semibold text-azul-noite">Cliente solicita via WhatsApp</h3>
+            <p class="mt-1 text-sm text-texto-sec">Partilhe zona de recolha, destino e hora. Confirmamos disponibilidade em minutos.</p>
+          </article>
+          <article class="timeline-step">
+            <p class="text-xs uppercase tracking-[0.14em] text-ambar-accao">Step 2</p>
+            <h3 class="mt-1 text-lg font-semibold text-azul-noite">Equipa Fambissa é enviada</h3>
+            <p class="mt-1 text-sm text-texto-sec">Recebe nome da equipa, ETA e detalhes de identificação para validação no local.</p>
+          </article>
+          <article class="timeline-step">
+            <p class="text-xs uppercase tracking-[0.14em] text-ambar-accao">Step 3</p>
+            <h3 class="mt-1 text-lg font-semibold text-azul-noite">Motorista conduz o carro do cliente</h3>
+            <p class="mt-1 text-sm text-texto-sec">Um profissional verificado assume a condução com protocolo operacional Fambissa.</p>
+          </article>
+          <article class="timeline-step">
+            <p class="text-xs uppercase tracking-[0.14em] text-ambar-accao">Step 4</p>
+            <h3 class="mt-1 text-lg font-semibold text-azul-noite">Scooter acompanha a operação</h3>
+            <p class="mt-1 text-sm text-texto-sec">O segundo operador segue a operação para recolha do motorista após a entrega.</p>
+          </article>
+          <article class="timeline-step">
+            <p class="text-xs uppercase tracking-[0.14em] text-ambar-accao">Step 5</p>
+            <h3 class="mt-1 text-lg font-semibold text-azul-noite">Cliente chega seguro</h3>
+            <p class="mt-1 text-sm text-texto-sec">Você chega em casa, no evento ou no compromisso com o seu próprio carro.</p>
+          </article>
         </div>
-        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">Você pede</h3>
-        <p class="mt-3 text-texto-sec leading-relaxed">Envie um WhatsApp ou ligue. Diga onde está e para onde quer ir. Em minutos, confirmamos a equipa e o tempo de chegada.</p>
-      </li>
-      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">2</span>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M15 15h2a4 4 0 0 1 4 4v2"/></svg>
-        </div>
-        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">A equipa chega</h3>
-        <p class="mt-3 text-texto-sec leading-relaxed">Dois profissionais credenciados: um motorista para o seu carro, um piloto de scooter para o acompanhar.</p>
-      </li>
-      <li class="relative bg-white rounded-2xl border border-cinza-borda/60 p-7 lg:p-8 shadow-brand">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="step-dot text-white font-bold w-10 h-10 rounded-full inline-flex items-center justify-center text-lg">3</span>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E75B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
-        </div>
-        <h3 class="text-xl lg:text-2xl font-semibold text-azul-noite tracking-tight-brand">Você chega em segurança</h3>
-        <p class="mt-3 text-texto-sec leading-relaxed">O motorista conduz o seu carro até ao destino. Você chega tranquilo. O seu carro chega consigo.</p>
-      </li>
-    </ol>
+      </div>
+
+      <aside class="lg:col-span-5 bg-white rounded-2xl border border-cinza-borda/60 p-6 lg:p-8 shadow-brand-lg">
+        <h3 class="text-2xl font-semibold text-azul-noite">Pedido rápido</h3>
+        <p class="mt-2 text-sm text-texto-sec">Diga apenas o essencial. A equipa responde com proposta imediata.</p>
+        <form id="quick-booking-form" class="mt-5 space-y-4" novalidate>
+          <input type="hidden" name="access_key" value="10b23642-1d13-406d-900b-e13b514fda7f" />
+          <input type="hidden" name="subject" value="Pedido rapido de motorista - Fambissa" />
+          <input type="hidden" name="from_name" value="Fambissa Website" />
+          <input type="hidden" name="form_type" value="Quick Booking" />
+          <input type="hidden" name="recipient_email" value="Fambissa.Ms@gmail.com" />
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" title="botcheck" />
+
+          <div>
+            <label for="pickup_area" class="block text-sm font-medium text-azul-noite mb-1.5">Pickup area</label>
+            <input id="pickup_area" name="pickup_area" type="text" required class="form-input focus-ring" placeholder="Ex.: Sommerschield" />
+          </div>
+          <div>
+            <label for="destination_area" class="block text-sm font-medium text-azul-noite mb-1.5">Destino</label>
+            <input id="destination_area" name="destination_area" type="text" required class="form-input focus-ring" placeholder="Ex.: Triunfo" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div>
+              <label for="service_type" class="block text-sm font-medium text-azul-noite mb-1.5">Tipo de serviço</label>
+              <select id="service_type" name="service_type" required class="form-input focus-ring">
+                <option value="">Seleccione</option>
+                <option value="noite">Night out</option>
+                <option value="executivo">Executivo</option>
+                <option value="evento">Evento</option>
+                <option value="aeroporto">Aeroporto</option>
+              </select>
+            </div>
+            <div>
+              <label for="service_time" class="block text-sm font-medium text-azul-noite mb-1.5">Hora</label>
+              <input id="service_time" name="service_time" type="time" required class="form-input focus-ring" />
+            </div>
+          </div>
+          <button type="submit" data-cta="form" data-cta-location="quick-booking" class="w-full bg-azul-activo hover:bg-azul-noite text-white font-semibold rounded-lg px-6 py-3.5 focus-ring transition-colors">
+            <span class="btn-submit-label" data-submit-label>Enviar pedido rápido</span>
+            <span class="btn-submit-loader hidden" data-submit-loader aria-hidden="true"></span>
+          </button>
+          <p id="quick-booking-status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </div>
   </div>
 </section>
 
-<!-- ============ 3. A EQUIPA DE DOIS ============ -->
-<section id="equipa-de-dois" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
+<!-- ============ 3. PORQUE FAMBISSA ============ -->
+<section id="porque-fambissa" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
     <div class="grid lg:grid-cols-12 gap-12 items-start">
       <div class="lg:col-span-5">
         <p class="pill bg-white/10 text-white/90 border border-white/15 mb-4">O diferencial</p>
-        <h2 class="text-3xl lg:text-5xl font-bold leading-tight">Dois profissionais.<br/><span class="text-ambar-accao">Uma promessa.</span></h2>
+        <h2 class="section-title text-3xl lg:text-5xl font-bold leading-tight">Dois profissionais.<br/><span class="text-ambar-accao">Uma promessa.</span></h2>
         <p class="mt-6 text-white/80 leading-relaxed text-lg">
           O serviço Fambissa opera sempre com dois profissionais por pedido. Um motorista credenciado conduz o seu carro até ao destino. Um piloto de scooter segue atrás, recolhe o motorista após a entrega, e a equipa segue para o pedido seguinte.
         </p>
@@ -905,13 +1169,13 @@
   </div>
 </section>
 
-<!-- ============ 4. QUANDO PEDIR ============ -->
-<section id="quando-pedir" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
+<!-- ============ 6. CASOS REAIS ============ -->
+<section id="casos-reais" class="bg-branco-limpo">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
+    <div class="max-w-prose-narrow section-heading-stack">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Quando pedir</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Seis momentos em que faz sentido.</h2>
-      <p class="mt-4 text-texto-sec text-lg">Reconhece algum? Provavelmente já viveu mais do que um.</p>
+      <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Seis momentos em que faz sentido.</h2>
+      <p class="section-lead mt-4 text-texto-sec text-lg">Reconhece algum? Provavelmente já viveu mais do que um.</p>
     </div>
 
     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
@@ -967,9 +1231,9 @@
   </div>
 </section>
 
-<!-- ============ 5. OS NOSSOS MOTORISTAS ============ -->
-<section id="motoristas" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
+<!-- ============ 5. TRUST & SAFETY ============ -->
+<section id="seguranca" class="bg-cinza-suave">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
       <div class="lg:col-span-5">
         <!-- Placeholder fotográfico estilizado (sem stock photo) -->
@@ -1020,8 +1284,8 @@
 
       <div class="lg:col-span-7">
         <p class="pill bg-verde-seguro/10 text-verde-seguro border border-verde-seguro/20 mb-4">Os nossos motoristas</p>
-        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Motoristas que conduziriam o carro do próprio pai.</h2>
-        <p class="mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">A questão mais importante quando se entrega as chaves a alguém: <em>posso confiar?</em> A nossa selecção responde primeiro.</p>
+        <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Motoristas que conduziriam o carro do próprio pai.</h2>
+        <p class="section-lead mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">A questão mais importante quando se entrega as chaves a alguém: <em>posso confiar?</em> A nossa selecção responde primeiro.</p>
 
         <ul class="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-5" role="list">
           <li class="flex items-start gap-3">
@@ -1072,11 +1336,11 @@
 
 <!-- ============ 6. COBERTURA ============ -->
 <section id="cobertura" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
       <div class="lg:col-span-5 order-2 lg:order-1">
         <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Cobertura e disponibilidade</p>
-        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Maputo, todas as zonas.<br/>24 horas, todos os dias.</h2>
+        <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Maputo, todas as zonas.<br/>24 horas, todos os dias.</h2>
 
         <ul class="mt-8 space-y-3 text-azul-noite">
           <li class="flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-ambar-accao"></span>Maputo Cidade — todas as zonas</li>
@@ -1170,11 +1434,11 @@
 
 <!-- ============ 7. PREÇOS ============ -->
 <section id="precos" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
+    <div class="max-w-prose-narrow section-heading-stack">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Preços</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Transparente. Confirmado sempre antes do serviço.</h2>
-      <p class="mt-4 text-texto-sec text-lg">Os valores abaixo são indicativos. O preço final depende da distância, hora e duração — e é confirmado consigo antes de o motorista sair.</p>
+      <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Transparente. Confirmado sempre antes do serviço.</h2>
+      <p class="section-lead mt-4 text-texto-sec text-lg">Os valores abaixo são indicativos. O preço final depende da distância, hora e duração — e é confirmado consigo antes de o motorista sair.</p>
     </div>
 
     <div class="mt-12 grid md:grid-cols-3 gap-6 lg:gap-7">
@@ -1250,12 +1514,12 @@
 
 <!-- ============ 8. EMPRESAS & PARCEIROS ============ -->
 <section id="empresas" class="bg-cinza-suave border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
       <div class="lg:col-span-6">
         <p class="pill bg-azul-activo/10 text-azul-activo border border-azul-activo/20 mb-4">Empresas e parceiros</p>
-        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">A sua empresa cuida dos colaboradores.<br/><span class="text-azul-activo">Nós ajudamos.</span></h2>
-        <p class="mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">Criamos parcerias B2B em Maputo e Matola para empresas, hospitalidade e seguradoras com operação escalável e resposta rápida.</p>
+        <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Mobilidade profissional para empresas.<br/><span class="text-azul-activo">Escala, segurança e controlo.</span></h2>
+        <p class="section-lead mt-5 text-texto-sec text-lg leading-relaxed max-w-xl">Criamos parcerias B2B em Maputo e Matola para empresas, hospitalidade e seguradoras com operação escalável e resposta rápida.</p>
 
         <div class="mt-10 space-y-5">
           <div class="rounded-xl bg-white border border-cinza-borda/60 p-5 lg:p-6">
@@ -1300,6 +1564,8 @@
           <input type="hidden" name="access_key" value="10b23642-1d13-406d-900b-e13b514fda7f" />
           <input type="hidden" name="subject" value="Novo pedido de parceria - Fambissa" />
           <input type="hidden" name="from_name" value="Fambissa Website" />
+          <input type="hidden" name="recipient_email" value="Fambissa.Ms@gmail.com" />
+          <input type="hidden" name="form_type" value="Parceria B2B" />
           <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" title="botcheck" />
           <h3 class="text-2xl font-semibold text-azul-noite tracking-tight-brand">Fale com a equipa de parcerias</h3>
           <p class="text-texto-sec text-sm mt-1">Respondemos em 24 horas úteis com proposta ajustada ao seu contexto em Maputo, Moçambique.</p>
@@ -1357,7 +1623,7 @@
           </div>
 
           <label class="mt-5 flex items-start gap-3 text-sm text-texto-sec">
-            <input type="checkbox" id="consent" required class="mt-1 accent-azul-activo" />
+            <input type="checkbox" id="consent" name="consent" required class="mt-1 accent-azul-activo" />
             <span>Aceito que a Fambissa contacte-me sobre este pedido. <a href="#" class="link-amber">Política de Privacidade</a>.</span>
           </label>
           <p class="form-error" data-error-for="consent" aria-live="polite"></p>
@@ -1365,7 +1631,8 @@
           <button type="submit"
                   data-cta="form" data-cta-location="empresas"
                   class="mt-7 w-full sm:w-auto bg-azul-activo hover:bg-azul-noite text-white font-semibold rounded-lg px-7 py-3.5 focus-ring transition-colors">
-                Receber proposta de parceria
+            <span class="btn-submit-label" data-submit-label>Receber proposta de parceria</span>
+            <span class="btn-submit-loader hidden" data-submit-loader aria-hidden="true"></span>
           </button>
           <p id="b2b-status" class="mt-3 text-sm text-texto-sec" aria-live="polite"></p>
 
@@ -1384,283 +1651,15 @@
   </div>
 </section>
 
-<!-- ============ 9. HOSPITAIS ============ -->
-<section id="hospitais" class="bg-branco-limpo border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
-      <p class="pill bg-verde-seguro/10 text-verde-seguro border border-verde-seguro/20 mb-4">Parcerias com hospitais</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Mobilidade clínica segura para hospitais e clínicas em Maputo.</h2>
-      <p class="mt-4 text-texto-sec text-lg">A Fambissa apoia instituições de saúde com logística de transporte de pacientes, acompanhantes e equipas médicas com atendimento 24/7.</p>
-    </div>
-
-    <div class="mt-12 grid lg:grid-cols-12 gap-8 lg:gap-10">
-      <article class="lg:col-span-4 rounded-2xl border border-cinza-borda/60 bg-white p-6 shadow-brand">
-        <h3 class="text-xl font-semibold text-azul-noite">Benefícios da parceria hospitalar</h3>
-        <ul class="mt-4 space-y-2.5 text-sm text-texto-sec">
-          <li>Redução do tempo de resposta em deslocações não urgentes.</li>
-          <li>Operação com protocolos de identificação e rastreio de serviço.</li>
-          <li>Canal dedicado para coordenação com recepção e equipa administrativa.</li>
-        </ul>
-      </article>
-
-      <article class="lg:col-span-4 rounded-2xl border border-cinza-borda/60 bg-white p-6 shadow-brand">
-        <h3 class="text-xl font-semibold text-azul-noite">Transporte e apoio logístico</h3>
-        <ul class="mt-4 space-y-2.5 text-sm text-texto-sec">
-          <li>Transporte de pacientes em alta médica no próprio veículo.</li>
-          <li>Apoio em transfer entre unidade, residência e consultas.</li>
-          <li>Condução segura para familiares e visitantes em horários nocturnos.</li>
-        </ul>
-      </article>
-
-      <article class="lg:col-span-4 rounded-2xl border border-cinza-borda/60 bg-white p-6 shadow-brand">
-        <h3 class="text-xl font-semibold text-azul-noite">Soluções corporativas de saúde</h3>
-        <ul class="mt-4 space-y-2.5 text-sm text-texto-sec">
-          <li>Planos mensais para clínicas, laboratórios e hospitais privados.</li>
-          <li>Relatórios por serviço para controlo administrativo e auditoria.</li>
-          <li>Condições especiais para operações recorrentes em Maputo e Matola.</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="mt-10 rounded-2xl bg-azul-noite text-white p-6 lg:p-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
-      <div>
-        <h3 class="text-2xl font-semibold">Contacto institucional para hospitais</h3>
-        <p class="mt-2 text-white/75">Fale com a equipa de parcerias para desenhar um modelo de operação clínica personalizado.</p>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="mailto:Fambissa.Ms@gmail.com?subject=Parceria%20Hospitalar%20-%20Fambissa"
-           data-cta="email" data-cta-location="hospitais"
-           class="btn-outline-light focus-ring rounded-lg px-6 py-3 text-sm font-semibold text-center">Enviar email institucional</a>
-        <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20gostaria%20de%20falar%20sobre%20parceria%20com%20hospital%20ou%20cl%C3%ADnica%20em%20Maputo."
-           target="_blank" rel="noopener"
-           data-cta="whatsapp" data-cta-location="hospitais"
-           class="btn-primary focus-ring rounded-lg px-6 py-3 text-sm font-semibold text-center">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 10. AUTOMOVEL ============ -->
-<section id="automovel" class="bg-cinza-suave border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
-      <p class="pill bg-azul-activo/10 text-azul-activo border border-azul-activo/20 mb-4">Serviços automóveis e parcerias</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Gestão de viaturas para garagens, concessionárias e clientes particulares.</h2>
-      <p class="mt-4 text-texto-sec text-lg">Centralize deslocações automóveis com a Fambissa: recolha, entrega e condução profissional para operações de oficina em Maputo, Moçambique.</p>
-    </div>
-
-    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Levar viaturas à oficina</h3>
-        <p class="mt-2 text-sm text-texto-sec">Recolhemos o carro no local indicado e entregamos na oficina parceira, com confirmação do trajecto.</p>
-      </article>
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Inspecção automóvel</h3>
-        <p class="mt-2 text-sm text-texto-sec">Apoiamos a deslocação para centros de inspecção, poupando tempo a empresas e condutores.</p>
-      </article>
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Lavagem e manutenção</h3>
-        <p class="mt-2 text-sm text-texto-sec">Serviço coordenado para lavagem, revisão e manutenção periódica com recolha e devolução.</p>
-      </article>
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Recolha e entrega de veículos</h3>
-        <p class="mt-2 text-sm text-texto-sec">Ideal para concessionárias, gestoras de frota e clientes particulares com agenda apertada.</p>
-      </article>
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Benefícios para empresas</h3>
-        <p class="mt-2 text-sm text-texto-sec">Menos viaturas paradas, melhor experiência do cliente e maior eficiência operacional.</p>
-      </article>
-      <article class="bg-white rounded-2xl border border-cinza-borda/60 p-6 shadow-brand">
-        <h3 class="text-lg font-semibold text-azul-noite">Benefícios para particulares</h3>
-        <p class="mt-2 text-sm text-texto-sec">Comodidade total: tratamos da logística enquanto mantém o seu dia produtivo.</p>
-      </article>
-    </div>
-
-    <div class="mt-10 flex flex-wrap items-center gap-3">
-      <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20quero%20parceria%20para%20servi%C3%A7os%20autom%C3%B3veis%20em%20Maputo."
-         target="_blank" rel="noopener"
-         data-cta="whatsapp" data-cta-location="automovel"
-         class="btn-primary focus-ring rounded-lg px-6 py-3 text-sm font-semibold inline-flex items-center gap-2">Solicitar proposta automóvel</a>
-      <a href="#empresas" class="btn-outline-dark focus-ring rounded-lg px-6 py-3 text-sm font-semibold inline-flex items-center gap-2">Ver modelo de parceria</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 11. CANDIDATURAS ============ -->
-<section id="candidaturas" class="bg-branco-limpo border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-      <div class="lg:col-span-6">
-        <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Candidaturas para motoristas</p>
-        <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Junte-se à equipa Fambissa em Maputo.</h2>
-        <p class="mt-5 text-texto-sec text-lg leading-relaxed">Se procura uma oportunidade estável, com impacto real na segurança rodoviária em Moçambique, candidate-se para motorista profissional Fambissa.</p>
-
-        <div class="mt-8 space-y-6">
-          <article class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-            <h3 class="font-semibold text-azul-noite text-lg">Requisitos necessários</h3>
-            <ul class="mt-3 space-y-2 text-sm text-texto-sec">
-              <li>Carta de condução válida (mínimo 5 anos de experiência prática).</li>
-              <li>Residência em Maputo ou Matola.</li>
-              <li>Registo criminal sem antecedentes e documentação regularizada.</li>
-              <li>Boa comunicação, pontualidade e postura profissional.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-            <h3 class="font-semibold text-azul-noite text-lg">Benefícios de trabalhar connosco</h3>
-            <ul class="mt-3 space-y-2 text-sm text-texto-sec">
-              <li>Formação contínua em condução defensiva e atendimento ao cliente.</li>
-              <li>Modelo de trabalho organizado com processos claros.</li>
-              <li>Oportunidade de crescimento na operação Fambissa.</li>
-              <li>Ambiente profissional e respeito pelo desempenho.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-            <h3 class="font-semibold text-azul-noite text-lg">Processo de candidatura</h3>
-            <ol class="mt-3 space-y-2 text-sm text-texto-sec list-decimal pl-5">
-              <li>Submeta os seus dados no formulário.</li>
-              <li>Receba contacto da equipa de recrutamento.</li>
-              <li>Participe na avaliação documental e prática.</li>
-              <li>Integre a formação inicial e o arranque operacional.</li>
-            </ol>
-          </article>
-        </div>
-      </div>
-
-      <div class="lg:col-span-6">
-        <form id="driver-form" novalidate class="bg-cinza-suave rounded-2xl border border-cinza-borda/60 p-6 lg:p-8 shadow-brand-lg">
-          <input type="hidden" name="access_key" value="10b23642-1d13-406d-900b-e13b514fda7f" />
-          <input type="hidden" name="subject" value="Nova candidatura de motorista - Fambissa" />
-          <input type="hidden" name="from_name" value="Fambissa Website" />
-          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" title="botcheck" />
-          <h3 class="text-2xl font-semibold text-azul-noite tracking-tight-brand">Enviar candidatura de motorista</h3>
-          <p class="text-texto-sec text-sm mt-1">Preencha os dados. A equipa entra em contacto em até 3 dias úteis.</p>
-
-          <div class="mt-6 grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="driver_nome" class="block text-sm font-medium text-azul-noite mb-1.5">Nome completo <span class="text-ambar-accao">*</span></label>
-              <input id="driver_nome" name="driver_nome" type="text" required class="form-input focus-ring" autocomplete="name" />
-              <p class="form-error" data-error-for="driver_nome" aria-live="polite"></p>
-            </div>
-            <div>
-              <label for="driver_telefone" class="block text-sm font-medium text-azul-noite mb-1.5">Telefone <span class="text-ambar-accao">*</span></label>
-              <input id="driver_telefone" name="driver_telefone" type="tel" inputmode="tel" required placeholder="+258 84 000 0000" class="form-input focus-ring" autocomplete="tel" />
-              <p class="form-error" data-error-for="driver_telefone" aria-live="polite"></p>
-            </div>
-            <div>
-              <label for="driver_bairro" class="block text-sm font-medium text-azul-noite mb-1.5">Bairro / Zona <span class="text-ambar-accao">*</span></label>
-              <input id="driver_bairro" name="driver_bairro" type="text" required class="form-input focus-ring" />
-              <p class="form-error" data-error-for="driver_bairro" aria-live="polite"></p>
-            </div>
-            <div>
-              <label for="driver_experiencia" class="block text-sm font-medium text-azul-noite mb-1.5">Anos de experiência <span class="text-ambar-accao">*</span></label>
-              <select id="driver_experiencia" name="driver_experiencia" required class="form-input focus-ring">
-                <option value="">Seleccione</option>
-                <option value="5-7">5 a 7 anos</option>
-                <option value="8-10">8 a 10 anos</option>
-                <option value="10+">Mais de 10 anos</option>
-              </select>
-              <p class="form-error" data-error-for="driver_experiencia" aria-live="polite"></p>
-            </div>
-          </div>
-
-          <fieldset class="mt-5">
-            <legend class="block text-sm font-medium text-azul-noite mb-2">Tipo de carta <span class="text-ambar-accao">*</span></legend>
-            <div class="grid sm:grid-cols-3 gap-2">
-              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
-                <input type="radio" name="driver_carta" value="ligeiros" required class="accent-azul-activo" />
-                <span class="text-sm text-azul-noite">Ligeiros</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
-                <input type="radio" name="driver_carta" value="profissional" class="accent-azul-activo" />
-                <span class="text-sm text-azul-noite">Profissional</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 rounded-lg border border-cinza-borda/70 cursor-pointer has-[:checked]:border-azul-activo has-[:checked]:bg-azul-activo/5">
-                <input type="radio" name="driver_carta" value="ambas" class="accent-azul-activo" />
-                <span class="text-sm text-azul-noite">Ambas</span>
-              </label>
-            </div>
-            <p class="form-error" data-error-for="driver_carta" aria-live="polite"></p>
-          </fieldset>
-
-          <div class="mt-5">
-            <label for="driver_mensagem" class="block text-sm font-medium text-azul-noite mb-1.5">Mensagem (opcional)</label>
-            <textarea id="driver_mensagem" name="driver_mensagem" rows="3" class="form-input focus-ring" placeholder="Fale da sua experiência e disponibilidade."></textarea>
-          </div>
-
-          <label class="mt-5 flex items-start gap-3 text-sm text-texto-sec">
-            <input type="checkbox" id="driver_consent" required class="mt-1 accent-azul-activo" />
-            <span>Aceito ser contactado sobre esta candidatura de motorista e concordo com a Política de Privacidade.</span>
-          </label>
-          <p class="form-error" data-error-for="driver_consent" aria-live="polite"></p>
-
-          <button type="submit"
-                  data-cta="form" data-cta-location="candidaturas"
-                  class="mt-7 w-full sm:w-auto bg-azul-activo hover:bg-azul-noite text-white font-semibold rounded-lg px-7 py-3.5 focus-ring transition-colors">
-            Submeter candidatura
-          </button>
-          <p id="driver-status" class="mt-3 text-sm text-texto-sec" aria-live="polite"></p>
-
-          <p class="mt-4 text-xs text-texto-sec">Preferir candidatura directa? Envie o seu perfil para <a href="mailto:Fambissa.Ms@gmail.com" class="link-amber">Fambissa.Ms@gmail.com</a>.</p>
-
-          <div id="driver-success" hidden class="mt-6 rounded-xl border border-verde-seguro/30 bg-verde-seguro/5 p-5 flex items-start gap-3">
-            <span class="w-8 h-8 rounded-full bg-verde-seguro inline-flex items-center justify-center flex-none">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>
-            <div>
-              <p class="font-semibold text-azul-noite">Candidatura recebida com sucesso.</p>
-              <p class="text-sm text-texto-sec mt-1">Obrigado pelo interesse. A nossa equipa de recrutamento vai analisar o seu perfil.</p>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 12. SOBRE ============ -->
-<section id="sobre" class="bg-branco-limpo">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow mx-auto text-center">
-      <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4 mx-auto">Sobre a Fambissa</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Nascida em Maputo.<br/>Pensada para Moçambique.</h2>
-      <p class="mt-6 text-texto-sec text-lg leading-relaxed">
-        A Fambissa nasceu da constatação de um problema diário sem solução organizada: quando o proprietário de um carro não está em condições de conduzir, deveria poder pedir um profissional que conduzisse o seu próprio veículo até casa. A equipa Fambissa construiu o serviço, a operação e a equipa para responder a essa necessidade — em Maputo, primeiro, e gradualmente no resto do país.
-      </p>
-      <p class="mt-5 text-texto-sec leading-relaxed">
-        O nome <strong class="text-azul-noite">Fambissa</strong> tem origem na língua Changana. Significa, na sua leitura mais directa, <em>aquele que conduz</em> — aquele que faz chegar.
-      </p>
-
-      <blockquote class="mt-12 mx-auto max-w-xl text-2xl lg:text-3xl font-semibold text-azul-noite tracking-tight-brand leading-snug">
-        “Fambissa — aquele que faz chegar.”
-      </blockquote>
-
-      <div class="mt-14 grid sm:grid-cols-3 gap-4 text-left">
-        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço comercial</p>
-          <p class="mt-2 text-sm text-azul-noite font-medium">Motorista substituto. O que pode pedir hoje.</p>
-        </div>
-        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço automotivo</p>
-          <p class="mt-2 text-sm text-azul-noite font-medium">Ecossistema do veículo. Em construção.</p>
-        </div>
-        <div class="rounded-xl border border-cinza-borda/60 bg-white p-5">
-          <p class="text-xs font-semibold text-azul-activo uppercase tracking-widest">Braço social</p>
-          <p class="mt-2 text-sm text-azul-noite font-medium">Formação e educação rodoviária. Em construção.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Secondary service pages moved out of homepage to keep core designated-driver focus. -->
 
 <!-- ============ 13. AVALIACOES ============ -->
 <section id="avaliacoes" class="bg-cinza-suave border-t border-cinza-borda/60">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
+    <div class="max-w-prose-narrow section-heading-stack">
       <p class="pill bg-ambar-accao/10 text-ambar-accao border border-ambar-accao/20 mb-4">Feedback e avaliações</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Clientes em Maputo confiam na Fambissa.</h2>
-      <p class="mt-4 text-texto-sec text-lg">A prova social é simples: serviço confiável, comunicação rápida e chegada em segurança. Veja testemunhos de clientes e partilhe também a sua experiência.</p>
+      <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Clientes em Maputo confiam na Fambissa.</h2>
+      <p class="section-lead mt-4 text-texto-sec text-lg">A prova social é simples: serviço confiável, comunicação rápida e chegada em segurança. Veja testemunhos de clientes e partilhe também a sua experiência.</p>
     </div>
 
     <div class="mt-10 grid lg:grid-cols-12 gap-6 lg:gap-8">
@@ -1699,6 +1698,8 @@
         <input type="hidden" name="access_key" value="10b23642-1d13-406d-900b-e13b514fda7f" />
         <input type="hidden" name="subject" value="Novo feedback de cliente - Fambissa" />
         <input type="hidden" name="from_name" value="Fambissa Website" />
+        <input type="hidden" name="recipient_email" value="Fambissa.Ms@gmail.com" />
+        <input type="hidden" name="form_type" value="Feedback de Cliente" />
         <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" title="botcheck" />
         <h3 class="text-2xl font-semibold text-azul-noite tracking-tight-brand">Deixe a sua avaliação</h3>
         <p class="text-texto-sec text-sm mt-1">O seu comentário ajuda novos clientes a decidir com confiança.</p>
@@ -1713,6 +1714,11 @@
             <label for="feedback_zona" class="block text-sm font-medium text-azul-noite mb-1.5">Zona (Maputo/Matola)</label>
             <input id="feedback_zona" name="feedback_zona" type="text" class="form-input focus-ring" placeholder="Ex.: Polana, Matola" />
             <p class="form-error" data-error-for="feedback_zona" aria-live="polite"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="feedback_email" class="block text-sm font-medium text-azul-noite mb-1.5">Email <span class="text-texto-sec font-normal">(opcional)</span></label>
+            <input id="feedback_email" name="feedback_email" type="email" class="form-input focus-ring" autocomplete="email" placeholder="nome@empresa.com" />
+            <p class="form-error" data-error-for="feedback_email" aria-live="polite"></p>
           </div>
         </div>
 
@@ -1744,7 +1750,8 @@
         <button type="submit"
                 data-cta="form" data-cta-location="avaliacoes"
                 class="mt-7 w-full sm:w-auto bg-azul-activo hover:bg-azul-noite text-white font-semibold rounded-lg px-7 py-3.5 focus-ring transition-colors">
-          Enviar feedback
+          <span class="btn-submit-label" data-submit-label>Enviar feedback</span>
+          <span class="btn-submit-loader hidden" data-submit-loader aria-hidden="true"></span>
         </button>
         <p id="feedback-status" class="mt-3 text-sm text-texto-sec" aria-live="polite"></p>
 
@@ -1777,10 +1784,10 @@
 
 <!-- ============ 14. FAQ ============ -->
 <section id="faq" class="bg-cinza-suave">
-  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28">
-    <div class="max-w-prose-narrow">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell">
+    <div class="max-w-prose-narrow section-heading-stack">
       <p class="pill bg-azul-noite/5 text-azul-noite border border-azul-noite/10 mb-4">Perguntas frequentes</p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Antes de pedir, as dúvidas mais comuns.</h2>
+      <h2 class="section-title text-3xl lg:text-5xl font-bold text-azul-noite leading-tight">Antes de pedir, as dúvidas mais comuns.</h2>
     </div>
 
     <div class="mt-12 grid lg:grid-cols-2 gap-x-10 gap-y-3 max-w-5xl">
@@ -1882,8 +1889,8 @@
 <!-- ============ 15. CTA FINAL ============ -->
 <section id="contacto" class="relative bg-azul-noite text-branco-limpo overflow-hidden">
   <div class="absolute inset-0 grid-overlay opacity-50" aria-hidden="true"></div>
-  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 py-14 lg:py-28 text-center">
-    <h2 class="text-3xl lg:text-5xl font-bold leading-tight max-w-3xl mx-auto">Pronto para nunca mais deixar o seu carro para trás?</h2>
+  <div class="relative max-w-container mx-auto px-4 sm:px-6 lg:px-12 section-shell text-center">
+    <h2 class="section-title text-3xl lg:text-5xl font-bold leading-tight max-w-3xl mx-auto">Pronto para nunca mais deixar o seu carro para trás?</h2>
     <p class="mt-5 text-white/80 text-lg max-w-xl mx-auto">Um WhatsApp. Uma equipa de dois profissionais. O seu carro, em casa, consigo.</p>
     <div class="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
       <a href="https://wa.me/258840000000?text=Ol%C3%A1%20Fambissa%2C%20quero%20pedir%20um%20servi%C3%A7o%20agora."
@@ -1930,21 +1937,19 @@
         <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Serviços</h4>
         <ul class="mt-4 space-y-2.5 text-sm">
           <li><a href="#como-funciona" class="text-white/70 hover:text-ambar-accao focus-ring">Como Funciona</a></li>
-          <li><a href="#quando-pedir" class="text-white/70 hover:text-ambar-accao focus-ring">Quando Pedir</a></li>
-          <li><a href="#precos" class="text-white/70 hover:text-ambar-accao focus-ring">Preços</a></li>
-          <li><a href="#avaliacoes" class="text-white/70 hover:text-ambar-accao focus-ring">Avaliações</a></li>
-          <li><a href="#cobertura" class="text-white/70 hover:text-ambar-accao focus-ring">Cobertura</a></li>
+          <li><a href="#casos-reais" class="text-white/70 hover:text-ambar-accao focus-ring">Casos Reais</a></li>
+          <li><a href="#seguranca" class="text-white/70 hover:text-ambar-accao focus-ring">Trust & Safety</a></li>
+          <li><a href="#avaliacoes" class="text-white/70 hover:text-ambar-accao focus-ring">Testemunhos</a></li>
+          <li><a href="#contacto" class="text-white/70 hover:text-ambar-accao focus-ring">Reservar Motorista</a></li>
         </ul>
       </div>
 
       <div class="lg:col-span-2">
         <h4 class="text-sm font-semibold text-white/90 uppercase tracking-wider">Empresa</h4>
         <ul class="mt-4 space-y-2.5 text-sm">
-          <li><a href="#sobre" class="text-white/70 hover:text-ambar-accao focus-ring">Sobre</a></li>
+          <li><a href="#social-proof" class="text-white/70 hover:text-ambar-accao focus-ring">Prova Social</a></li>
+          <li><a href="#porque-fambissa" class="text-white/70 hover:text-ambar-accao focus-ring">Porquê Fambissa</a></li>
           <li><a href="#empresas" class="text-white/70 hover:text-ambar-accao focus-ring">Parcerias</a></li>
-          <li><a href="#hospitais" class="text-white/70 hover:text-ambar-accao focus-ring">Hospitais</a></li>
-          <li><a href="#automovel" class="text-white/70 hover:text-ambar-accao focus-ring">Automóvel</a></li>
-          <li><a href="#candidaturas" class="text-white/70 hover:text-ambar-accao focus-ring">Carreiras</a></li>
           <li><a href="#contacto" class="text-white/70 hover:text-ambar-accao focus-ring">Contacto</a></li>
         </ul>
       </div>
@@ -2011,7 +2016,7 @@
 </a>
 
 <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 </script>
 
 </body>
